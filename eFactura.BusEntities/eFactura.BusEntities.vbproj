@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E62808F-A1E1-42C5-83C1-AC44D7C75349}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eFactura.BusEntities</RootNamespace>
+    <AssemblyName>eFactura.BusEntities</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>eFactura.BusEntities.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>eFactura.BusEntities.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOCUMENTOSRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DOCUMENTOSRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EMPRESASRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMPRESASRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EMPRESASRecord.vb">
+      <DependentUpon>EMPRESASRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LOGSRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOGSRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MAESTRO_CbteTipoRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAESTRO_CbteTipoRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MAESTRO_DocTipoRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAESTRO_DocTipoRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MAESTRO_ESTADOS_DOCUMENTORecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAESTRO_ESTADOS_DOCUMENTORecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MAESTRO_MonedaRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAESTRO_MonedaRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MAESTRO_TipoIvaRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAESTRO_TipoIvaRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MAESTRO_TributoRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAESTRO_TributoRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PARAMETROSRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PARAMETROSRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PUNTO_VENTA_CONTROLRecord.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PUNTO_VENTA_CONTROLRecord.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DOCUMENTOSRecord.xsc">
+      <DependentUpon>DOCUMENTOSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="DOCUMENTOSRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DOCUMENTOSRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DOCUMENTOSRecord.xss">
+      <DependentUpon>DOCUMENTOSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="EMPRESASRecord.xsc">
+      <DependentUpon>EMPRESASRecord.xsd</DependentUpon>
+    </None>
+    <None Include="EMPRESASRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>EMPRESASRecord.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="EMPRESASRecord.xss">
+      <DependentUpon>EMPRESASRecord.xsd</DependentUpon>
+    </None>
+    <None Include="LOGSRecord.xsc">
+      <DependentUpon>LOGSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="LOGSRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LOGSRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LOGSRecord.xss">
+      <DependentUpon>LOGSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_CbteTipoRecord.xsc">
+      <DependentUpon>MAESTRO_CbteTipoRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_CbteTipoRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAESTRO_CbteTipoRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MAESTRO_CbteTipoRecord.xss">
+      <DependentUpon>MAESTRO_CbteTipoRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_DocTipoRecord.xsc">
+      <DependentUpon>MAESTRO_DocTipoRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_DocTipoRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAESTRO_DocTipoRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MAESTRO_DocTipoRecord.xss">
+      <DependentUpon>MAESTRO_DocTipoRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_ESTADOS_DOCUMENTORecord.xsc">
+      <DependentUpon>MAESTRO_ESTADOS_DOCUMENTORecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_ESTADOS_DOCUMENTORecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAESTRO_ESTADOS_DOCUMENTORecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MAESTRO_ESTADOS_DOCUMENTORecord.xss">
+      <DependentUpon>MAESTRO_ESTADOS_DOCUMENTORecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_MonedaRecord.xsc">
+      <DependentUpon>MAESTRO_MonedaRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_MonedaRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAESTRO_MonedaRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MAESTRO_MonedaRecord.xss">
+      <DependentUpon>MAESTRO_MonedaRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_TipoIvaRecord.xsc">
+      <DependentUpon>MAESTRO_TipoIvaRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_TipoIvaRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAESTRO_TipoIvaRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MAESTRO_TipoIvaRecord.xss">
+      <DependentUpon>MAESTRO_TipoIvaRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_TributoRecord.xsc">
+      <DependentUpon>MAESTRO_TributoRecord.xsd</DependentUpon>
+    </None>
+    <None Include="MAESTRO_TributoRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAESTRO_TributoRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MAESTRO_TributoRecord.xss">
+      <DependentUpon>MAESTRO_TributoRecord.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PARAMETROSRecord.xsc">
+      <DependentUpon>PARAMETROSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="PARAMETROSRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PARAMETROSRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PARAMETROSRecord.xss">
+      <DependentUpon>PARAMETROSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="PUNTO_VENTA_CONTROLRecord.xsc">
+      <DependentUpon>PUNTO_VENTA_CONTROLRecord.xsd</DependentUpon>
+    </None>
+    <None Include="PUNTO_VENTA_CONTROLRecord.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PUNTO_VENTA_CONTROLRecord.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PUNTO_VENTA_CONTROLRecord.xss">
+      <DependentUpon>PUNTO_VENTA_CONTROLRecord.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

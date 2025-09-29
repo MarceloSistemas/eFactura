@@ -1,0 +1,891 @@
+Escitorio remoto
+172.16.5.233
+172.16.5.226 (nuevo)
+Administrador
+Ifsa1975
+Dominio Insforma
+sa
+ifsajde
+
+
+Nuevas URLS de produccion
+[10:14, 3/18/2020] PK: http://ifdc1-vm/eFactura/admin/login.aspx
+[10:14, 3/18/2020] PK: http://172.16.5.225/eFactura/admin/login.aspx
+
+Nueva ubicacion de certificado
+H:\efactura\eFactura\Exe\ifsa2019.pfx
+
+
+URLS de FECRED
+https://serviciosjava.afip.gob.ar/wsfecred/FECredService
+https://fwshomo.afip.gov.ar/wsfecred/FECredService?wsdl
+
+
+
+
+?<?xml version="1.0" encoding="utf-8"?><FECAEResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><FeCabResp xmlns="http://ar.gov.afip.dif.FEV1/"><Cuit>30529923461</Cuit><PtoVta>52</PtoVta><CbteTipo>1</CbteTipo><FchProceso>20190716172422</FchProceso><CantReg>1</CantReg><Resultado>R</Resultado><Reproceso>N</Reproceso></FeCabResp><FeDetResp xmlns="http://ar.gov.afip.dif.FEV1/"><FECAEDetResponse><Concepto>1</Concepto><DocTipo>80</DocTipo><DocNro>30515488479</DocNro><CbteDesde>1</CbteDesde><CbteHasta>1</CbteHasta><CbteFch>20190716</CbteFch><Resultado>R</Resultado><CAE /><CAEFchVto /></FECAEDetResponse></FeDetResp><Errors xmlns="http://ar.gov.afip.dif.FEV1/"><Err><Code>10016</Code><Msg>El numero o fecha del comprobante no se corresponde con el proximo a autorizar. Consultar metodo FECompUltimoAutorizado.</Msg></Err></Errors></FECAEResponse>
+
+?<?xml version="1.0" encoding="utf-8"?><FECAEResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><FeCabResp xmlns="http://ar.gov.afip.dif.FEV1/"><Cuit>30529923461</Cuit><PtoVta>52</PtoVta><CbteTipo>1</CbteTipo><FchProceso>20190716174017</FchProceso><CantReg>1</CantReg><Resultado>A</Resultado><Reproceso>N</Reproceso></FeCabResp><FeDetResp xmlns="http://ar.gov.afip.dif.FEV1/"><FECAEDetResponse><Concepto>1</Concepto><DocTipo>80</DocTipo><DocNro>30515488479</DocNro><CbteDesde>6</CbteDesde><CbteHasta>6</CbteHasta><CbteFch>20190716</CbteFch><Resultado>A</Resultado><CAE>69291762210741</CAE><CAEFchVto>20190726</CAEFchVto></FECAEDetResponse></FeDetResp></FECAEResponse>
+
+
+
+
+ 
+ 
+ ------------------------------------
+<OpcionalTipoResponse>
+  <ResultGet>
+    <OpcionalTipo>
+      <Id>2</Id>
+      <Desc>RG Empresas Promovidas - Indentificador de proyecto vinculado a Régimen de Promoción Industrial</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>91</Id>
+      <Desc>RG Bienes Usados 3411 - Nombre y Apellido o Denominación del vendedor del bien usado.</Desc>
+      <FchDesde>20130401</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>92</Id>
+      <Desc>RG Bienes Usados 3411 - Nacionalidad del vendedor del bien usado.</Desc>
+      <FchDesde>20130401</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>93</Id>
+      <Desc>RG Bienes Usados 3411 - Domicilio del vendedor del bien usado.</Desc>
+      <FchDesde>20130401</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>5</Id>
+      <Desc>Excepcion computo IVA Credito Fiscal</Desc>
+      <FchDesde>20141016</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>61</Id>
+      <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Firmante Doc Tipo</Desc>
+      <FchDesde>20141016</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>62</Id>
+      <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Firmante Doc Nro</Desc>
+      <FchDesde>20141016</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>7</Id>
+      <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Carácter del Firmante</Desc>
+      <FchDesde>20141016</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>10</Id>
+      <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Actividad Comprendida</Desc>
+      <FchDesde>20150605</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>1011</Id>
+      <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Tipo de Documento</Desc>
+      <FchDesde>20150605</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>1012</Id>
+      <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Número de Documento</Desc>
+      <FchDesde>20150605</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>11</Id>
+      <Desc>RG 2.820 Operaciones económicas vinculadas con bienes inmuebles - Actividad Comprendida</Desc>
+      <FchDesde>20150605</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>12</Id>
+      <Desc>RG 3.687 Locación temporaria de inmuebles con fines turísticos - Actividad Comprendida</Desc>
+      <FchDesde>20150605</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>13</Id>
+      <Desc>RG 2.863 Representantes de Modelos</Desc>
+      <FchDesde>20160101</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>14</Id>
+      <Desc>RG 2.863 Agencias de publicidad</Desc>
+      <FchDesde>20160101</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>15</Id>
+      <Desc>RG 2.863 Personas físicas que desarrollen actividad de modelaje</Desc>
+      <FchDesde>20160101</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>17</Id>
+      <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Dato 2 (dos) = facturación directa / Dato 1 (uno) = facturación a través de intermediario</Desc>
+      <FchDesde>20170309</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>1801</Id>
+      <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Clave Única de Identificación Tributaria (CUIT).</Desc>
+      <FchDesde>20170309</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>1802</Id>
+      <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Apellido y nombres, denominación y/o razón social.</Desc>
+      <FchDesde>20170309</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>2101</Id>
+      <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - CBU del Emisor</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>2102</Id>
+      <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Alias del Emisor</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>22</Id>
+      <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Anulación</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+    <OpcionalTipo>
+      <Id>23</Id>
+      <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Referencia Comercial</Desc>
+      <FchDesde>20190308</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </OpcionalTipo>
+  </ResultGet>
+</OpcionalTipoResponse>
+------------------------------
+
+
+{ "cbu":"1234567890123456789099", "cbualias":"A23456"}
+
+
+
+Escitorio remoto
+172.16.5.233
+Administrador
+Ifsa1975
+Dominio Insforma
+sa
+ifsajde
+
+
+
+Error al invocar Web Service: Computador no autorizado a acceder al servicio  
+Error al intentar delegar el web service: No esta autorizado a delegar este servicio
+
+
+FTP
+[09:38, 7/31/2019] Marcelo Abosh: sitio ftp: ftp.site4now.net        usuario:laburo   pass:pkma2019
+[09:42, 7/31/2019] Marcelo Abosh: http://www.prueba.com.ar/archivos/solid.pdf
+a
+
+que los dos campitos le lleguen a la nota de credito, igual va a llegar en todos los documentos
+si empieza > 200 el documentType chantarle los campos al web service 
+en la base está la vista, tocar esa vista
+
+---------- Forwarded message ---------
+De: Alejandro Cicero <acicero@interieurforma.com.ar>
+Date: mar., 27 ago. 2019 19:00
+Subject: factura de credito electronica
+To: Marcelo Abosch <marcelo.abosch@gmail.com>1
+f56bejfel
+
+agregue:
+
+cbtefchvto char(8)
+cbu varchar(22)
+aliascbu varchar(22)
+
+que mas necesitas?
+
+gracias
+
+Alejandro Cicero
+Administracion y Finanzas
+
+
+
+
+interieur forma s.a. knoll
+Quirno Costa 1975
+(B1646EMG) San Fernando
++54 11 4746 4466
+acicero@interieurforma.com.ar
+www.interieurforma.com.ar
+
+
+en el replicador 
+lo mete en documentosIFSA
+
+primero los mete en docuemntos IFSA
+documentos
+
+        Dim dstDocumentosIfsa As New DocumentosIfsa
+        Dim dstDocumentosRecord As New DocumentoRecord
+
+			agregar los 3
+
+			y despues lo va recorriendo
+
+
+			en el update si  le chanto valor a los tres campos, sino los dejo en null
+
+			en el programa 
+
+			process get efactura cre
+
+
+en el proceess get agregar los 3
+en el insert que viene del select agregar los 3
+en en el sp de insert y updt también, pero dejarlos nullables con parametros = null
+en los recordrset del negocio no
+
+Marce: 
+
+ya agregué los tres campos al select, pero
+
+-voy a tener que agregarlos a la tabla Documentos, 
+
+-al DOCUMENTOSRecord.xsd 
+
+-a los SP 
+DOCUMENTOS_A_INFORMAR_LIST no se, se usa desde  Private Sub ActualizarDocumentos()
+DOCUMENTOS_LST no se
+DOCUMENTOS_SEL no se
+DOCUMENTOS_UPDT si
+DOCUMENTOS_INS si
+process_get
+
+Y a todos los lugares del programa que llamen a esos SP
+
+es correcto ??????????????
+
+
+DocumentoIfsa.xsd
+DocumentoRecord.xsd
+
+
+6/9
+arreglos para el error de bull de cicheo
+
+el datarecord de document record tenia los tres campos nuevos sin limitar el tamanio
+el datarecord del document ifsa no tenia tamanio en los campos
+ahora solo grabo los nuevos campos cuando es mayor a 200
+
+
+
+1269	2019-09-07 18:07:21.887	Exception	ActualizarEstado  The value for column 'CAE' in table 'DOCUMENTOS' is DBNull.  Unable to cast object of type 'System.DBNull' to type 'System.String'.    
+1170	2019-09-06 15:38:00.397	Exception	The parameter 'address' cannot be an empty string.  Parameter name: address  
+
+
+SELECT * FROM DOCUMENTOS WHERE cae is null)
+
+----------
+----------
+01-001-0052-00009326                	1	1	52	9326	1	80	30502874353	20190319	9282.53	0	7671.51	0	1611.02	0	        	        	        	DOL	41	T		2019-03-19 16:05:00.270	2019-09-09 00:42:00.177	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+01-001-0052-00009434                	1	1	52	9434	1	80	30685218190	20190430	16684.57	0	13788.9	0	2895.67	0	        	        	        	PES	1	T		2019-04-30 12:58:00.310	2019-09-09 00:42:00.177	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+----------
+----------
+DOCUMENTO_ID                         EMPRESA_ID  CbteTipo    PtoVta      CbteNro     Concepto    DocTipo     DocNro               CbteFecha ImpTotal               ImpTotConc             ImpNeto                ImpOpEx                ImpIva                 ImpTrib                FchServDesde FchServHasta FchVtoPago MonId MonCotiz               ESTADO_ID NOTAS                                                                                                                                                                                                                                                            FECHA_ALTA              FECHA_ACTUALIZACION     ERP_NOMBRE_ARCHIVO                                                                                                                                                                                                                                               CAE            CAEFchVto Error                                                                                                                                                                                                                                                            cbteFchVto cbu                    aliasCbu
+------------------------------------ ----------- ----------- ----------- ----------- ----------- ----------- -------------------- --------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ------------ ------------ ---------- ----- ---------------------- --------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- ----------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------- --------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------- ---------------------- ----------------------
+01-001-0052-00009326                 1           1           52          9326        1           80          30502874353          20190319  9282.53                0                      7671.51                0                      1611.02                0                                                           DOL   41                     T                                                                                                                                                                                                                                                                          2019-03-19 16:05:00.270 2019-09-09 00:41:00.210 NULL                                                                                                                                                                                                                                                             NULL           NULL      NULL                                                                                                                                                                                                                                                             NULL       NULL                   NULL
+01-001-0052-00009434                 1           1           52          9434        1           80          30685218190          20190430  16684.57               0                      13788.9                0                      2895.67                0                                                           PES   1                      T                                                                                                                                                                                                                                                                          2019-04-30 12:58:00.310 2019-09-09 00:41:00.210 NULL                                                                                                                                                                                                                                                             NULL           NULL      NULL                                                                                                                                                                                                                                                             NULL       NULL                   NULL
+
+(2 row(s) affected)
+
+[18:01, 9/10/2019] PK: 
+
+Tipo - Int (3) - Código de tipo de comprobante. - Obligatorio
+PtoVta - Int (5) - Punto de venta del comprobanteasociado - Obligatorio
+Nro -  Long (8) - Numero de comprobante asociado - Obligatorio
+Cuit - String(11) - Cuit emisor del comprobante asociado - Opcional
+CbteFch - String(8) - Fecha del comprobante asociado - Opcional
+
+[18:02, 9/10/2019] PK: Hola Ale! Esos son los campos que necesitamos que agregues en caso de enviar un comprobante asociado
+
+[14:52, 9/11/2019] Alejandro Cichero: CREATE TABLE [proddta].[F56BEJFEL](
+	[BJDOCO] [float] NULL,
+	[BJDCTO] [char](2) NULL,
+	[BJDCT] [char](2) NULL,
+	[BJDOC] [float] NULL,
+	[BJAN8] [float] NULL,
+	[BJALPH] [char](40) NULL,
+	[BJVR02] [char](25) NULL,
+	[BJAG] [float] NULL,
+	[BJURAB] [float] NULL,
+	[BJCRCD] [char](3) NULL,
+	[cbtetipo] [int] NULL,
+	[ptovta] [int] NULL,
+	[cbtenro] [int] NULL,
+	[concepto] [int] NULL,
+	[doctipo] [int] NULL,
+	[docnro] [bigint] NULL,
+	[cbtefech] [char](8) NULL CONSTRAINT [DF_F56BEJFEL_cbtefech]  DEFAULT (' '),
+	[tipo] [char](1) NULL,
+	[estado] [char](1) NULL,
+	[cae] [varchar](50) NULL CONSTRAINT [DF_F56BEJFEL_cae]  DEFAULT (' '),
+	[moncotiz] [float] NULL,
+	[caefchvto] [char](8) NULL CONSTRAINT [DF_F56BEJFEL_caefchvto]  DEFAULT (' '),
+	[error] [varchar](2500) NULL CONSTRAINT [DF_F56BEJFEL_error]  DEFAULT (' '),
+	[impreso] [char](1) NULL,
+	[cbtefchvto] [char](8) NULL,
+	[cbu] [varchar](22) NULL,
+	[aliascbu] [varchar](22) NULL,
+	[rcbtetipo] [int] NULL, -- nuevo
+	[rptovta] [int] NULL, -- nuevo
+	[rcbtenro] [int] NULL, -- nuevo
+    [rcbtefech] [char](8) NULL -- nuevo
+
+	los ultimos 4 son los que empiezan con "R" y ahi estará la informacion del comprobante relacionado
+ok avisame y largamos con la factura de credito
+Alejandro Cichero: ya los bancos tienen un minimo de 100.000$
+Alejandro Cichero: o sea , todas nuestras facturas a bancos son electronicas de credito
+Alejandro Cichero: y es un kilombo usar el web service
+
+
+
+
+Tiposde Comprobante:
+
+<CbteTipoResponse>
+  <ResultGet>
+    <CbteTipo>
+      <Id>1</Id>
+      <Desc>Factura A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>2</Id>
+      <Desc>Nota de Débito A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>3</Id>
+      <Desc>Nota de Crédito A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>6</Id>
+      <Desc>Factura B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>7</Id>
+      <Desc>Nota de Débito B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>8</Id>
+      <Desc>Nota de Crédito B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>4</Id>
+      <Desc>Recibos A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>5</Id>
+      <Desc>Notas de Venta al contado A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>9</Id>
+      <Desc>Recibos B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>10</Id>
+      <Desc>Notas de Venta al contado B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>63</Id>
+      <Desc>Liquidacion A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>64</Id>
+      <Desc>Liquidacion B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>34</Id>
+      <Desc>Cbtes. A del Anexo I, Apartado A,inc.f),R.G.Nro. 1415</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>35</Id>
+      <Desc>Cbtes. B del Anexo I,Apartado A,inc. f),R.G. Nro. 1415</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>39</Id>
+      <Desc>Otros comprobantes A que cumplan con R.G.Nro. 1415</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>40</Id>
+      <Desc>Otros comprobantes B que cumplan con R.G.Nro. 1415</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>60</Id>
+      <Desc>Cta de Vta y Liquido prod. A</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>61</Id>
+      <Desc>Cta de Vta y Liquido prod. B</Desc>
+      <FchDesde>20100917</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>11</Id>
+      <Desc>Factura C</Desc>
+      <FchDesde>20110330</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>12</Id>
+      <Desc>Nota de Débito C</Desc>
+      <FchDesde>20110330</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>13</Id>
+      <Desc>Nota de Crédito C</Desc>
+      <FchDesde>20110330</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>15</Id>
+      <Desc>Recibo C</Desc>
+      <FchDesde>20110330</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>49</Id>
+      <Desc>Comprobante de Compra de Bienes Usados a Consumidor Final</Desc>
+      <FchDesde>20130401</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>51</Id>
+      <Desc>Factura M</Desc>
+      <FchDesde>20150522</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>52</Id>
+      <Desc>Nota de Débito M</Desc>
+      <FchDesde>20150522</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>53</Id>
+      <Desc>Nota de Crédito M</Desc>
+      <FchDesde>20150522</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>54</Id>
+      <Desc>Recibo M</Desc>
+      <FchDesde>20150522</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>201</Id>
+      <Desc>Factura de Crédito electrónica MiPyMEs (FCE) A</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>202</Id>
+      <Desc>Nota de Débito electrónica MiPyMEs (FCE) A</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>203</Id>
+      <Desc>Nota de Crédito electrónica MiPyMEs (FCE) A</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>206</Id>
+      <Desc>Factura de Crédito electrónica MiPyMEs (FCE) B</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>207</Id>
+      <Desc>Nota de Débito electrónica MiPyMEs (FCE) B</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>208</Id>
+      <Desc>Nota de Crédito electrónica MiPyMEs (FCE) B</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>211</Id>
+      <Desc>Factura de Crédito electrónica MiPyMEs (FCE) C</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>212</Id>
+      <Desc>Nota de Débito electrónica MiPyMEs (FCE) C</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+    <CbteTipo>
+      <Id>213</Id>
+      <Desc>Nota de Crédito electrónica MiPyMEs (FCE) C</Desc>
+      <FchDesde>20181226</FchDesde>
+      <FchHasta>NULL</FchHasta>
+    </CbteTipo>
+  </ResultGet>
+</CbteTipoResponse>
+
+tipos de comprobantes
+https://www.afip.gob.ar/facturadecreditoelectronica/conceptos/comprobantes.asp
+
+OCX Factura Electrónica y web services AFIP
+https://sites.google.com/site/facturaelectronicax/Home/factura-pyme
+
+IFSA ultimos comprobantes
+
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-201-0262-00000002                 / 69391254604029 / 20190924 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":262,"CbteTipo":201},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30592665472,"CbteDesde":2,"CbteHasta":2,"CbteFch":"20190924","ImpTotal":37217.43,"ImpTotConc":0.0,"ImpNeto":30758.21,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":6459.22,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":"20191024","MonId":"DOL","MonCotiz":58.5,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":30758.21,"Importe":6459.22}],"Opcionales":[{"Id":"2101","Valor":"0720000720000002193304"},{"Id":"2102","Valor":"TRANVIA.ORO.PASADO"}],"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-001-0062-00005826                 / 69391254602501 / 20191004 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":62,"CbteTipo":1},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30530258560,"CbteDesde":5826,"CbteHasta":5826,"CbteFch":"20190924","ImpTotal":37217.43,"ImpTotConc":0.0,"ImpNeto":30758.21,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":6459.22,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"DOL","MonCotiz":58.5,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":30758.21,"Importe":6459.22}],"Opcionales":null,"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-002-0052-00003434                 / 69391248957726 / 20191004 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":52,"CbteTipo":2},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30708795395,"CbteDesde":3434,"CbteHasta":3434,"CbteFch":"20190924","ImpTotal":21415.19,"ImpTotConc":0.0,"ImpNeto":17698.5,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":3716.69,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"PES","MonCotiz":1.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":17698.5,"Importe":3716.69}],"Opcionales":null,"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-001-0052-00009833                 / 69391247239329 / 20191004 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":52,"CbteTipo":1},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30546689979,"CbteDesde":9833,"CbteHasta":9833,"CbteFch":"20190924","ImpTotal":237503.74,"ImpTotConc":0.0,"ImpNeto":196284.08,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":41219.66,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"PES","MonCotiz":1.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":196284.08,"Importe":41219.66}],"Opcionales":null,"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-001-0062-00005825                 / 69391243370765 / 20191004 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":62,"CbteTipo":1},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30716543311,"CbteDesde":5825,"CbteHasta":5825,"CbteFch":"20190924","ImpTotal":5444.52,"ImpTotConc":0.0,"ImpNeto":4499.6,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":944.92,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"DOL","MonCotiz":58.5,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":4499.6,"Importe":944.92}],"Opcionales":null,"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-001-0062-00005824                 / 69391243369842 / 20191004 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":62,"CbteTipo":1},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30716543311,"CbteDesde":5824,"CbteHasta":5824,"CbteFch":"20190924","ImpTotal":781101.67,"ImpTotConc":0.0,"ImpNeto":645538.57,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":135563.1,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"PES","MonCotiz":1.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":645538.57,"Importe":135563.1}],"Opcionales":null,"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-201-0252-00000004                 / 69391235840543 / 20190924 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":252,"CbteTipo":201},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30500050310,"CbteDesde":4,"CbteHasta":4,"CbteFch":"20190924","ImpTotal":318898.78,"ImpTotConc":0.0,"ImpNeto":263552.71,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":55346.07,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":"20191024","MonId":"PES","MonCotiz":1.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":263552.71,"Importe":55346.07}],"Opcionales":[{"Id":"2101","Valor":"0720000720000002193304"},{"Id":"2102","Valor":"TRANVIA.ORO.PASADO"}],"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-201-0252-00000004                 /  /  / 10038 - El campo MonCotiz es obligatorio , mayor a 0.,  
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":252,"CbteTipo":201},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30500050310,"CbteDesde":4,"CbteHasta":4,"CbteFch":"20190924","ImpTotal":318898.78,"ImpTotConc":0.0,"ImpNeto":263552.71,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":55346.07,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":"20191024","MonId":"PES","MonCotiz":0.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":263552.71,"Importe":55346.07}],"Opcionales":[{"Id":"2101","Valor":"0720000720000002193304"},{"Id":"2102","Valor":"TRANVIA.ORO.PASADO"}],"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-201-0252-00000004                 /  /  / 10037 - El campo  MonId es obligatorio  y debe corresponder a algÃºn valor devuelto  por  el  mÃ©todo FEParamGetTiposMonedas.,  
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":252,"CbteTipo":201},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30500050310,"CbteDesde":4,"CbteHasta":4,"CbteFch":"20190924","ImpTotal":318898.78,"ImpTotConc":0.0,"ImpNeto":263552.71,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":55346.07,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":"20191024","MonId":"000","MonCotiz":0.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":263552.71,"Importe":55346.07}],"Opcionales":[{"Id":"2101","Valor":"0720000720000002193304"},{"Id":"2102","Valor":"TRANVIA.ORO.PASADO"}],"Compradores":null}]}
+AFIP: documentID / CAE / caeFchVto /errorMsg: 01-001-0052-00009832                 / 69391228532390 / 20191004 / 
+AFIP Request:  {"FeCabReq":{"CantReg":1,"PtoVta":52,"CbteTipo":1},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30501596082,"CbteDesde":9832,"CbteHasta":9832,"CbteFch":"20190924","ImpTotal":31954.89,"ImpTotConc":0.0,"ImpNeto":26409.0,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":5545.89,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"PES","MonCotiz":1.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":26409.0,"Importe":5545.89}],"Opcionales":null,"Compradores":null}]}
+
+
+
+CUIT: 30506775244
+Resultado Consulta Comprobante: 
+
+<ConsultarHistorialEstadosComprobanteReturnType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idComprobante>
+    <CUITEmisor>30529923461</CUITEmisor>
+    <codTipoCmp>201</codTipoCmp>
+    <ptoVta>252</ptoVta>
+    <nroCmp>1</nroCmp>
+  </idComprobante>
+  <arrayHistorialEstados>
+    <estadoHistorico>
+      <estado>PendienteRecepcion</estado>
+      <fechaHoraEstado>2019-09-18T11:17:26</fechaHoraEstado>
+    </estadoHistorico>
+    <estadoHistorico>
+      <estado>Recepcionado</estado>
+      <fechaHoraEstado>2019-09-20T00:30:21</fechaHoraEstado>
+    </estadoHistorico>
+  </arrayHistorialEstados>
+</ConsultarHistorialEstadosComprobanteReturnType>
+
+CUIT: 30506775244
+Resultado Consulta Comprobante 4: 
+
+<ConsultarHistorialEstadosComprobanteReturnType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idComprobante>
+    <CUITEmisor>30529923461</CUITEmisor>
+    <codTipoCmp>201</codTipoCmp>
+    <ptoVta>252</ptoVta>
+    <nroCmp>4</nroCmp>
+  </idComprobante>
+  <arrayHistorialEstados>
+    <estadoHistorico>
+      <estado>PendienteRecepcion</estado>
+      <fechaHoraEstado>2019-09-24T11:27:24</fechaHoraEstado>
+    </estadoHistorico>
+  </arrayHistorialEstados>
+</ConsultarHistorialEstadosComprobanteReturnType>
+
+CUIT: 30506775244
+Resultado Consulta Comprobante: 
+
+<ConsultarHistorialEstadosComprobanteReturnType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idComprobante>
+    <CUITEmisor>30529923461</CUITEmisor>
+    <codTipoCmp>201</codTipoCmp>
+    <ptoVta>252</ptoVta>
+    <nroCmp>2</nroCmp>
+  </idComprobante>
+  <arrayHistorialEstados>
+    <estadoHistorico>
+      <estado>PendienteRecepcion</estado>
+      <fechaHoraEstado>2019-09-18T14:36:20</fechaHoraEstado>
+    </estadoHistorico>
+    <estadoHistorico>
+      <estado>Recepcionado</estado>
+      <fechaHoraEstado>2019-09-20T00:30:22</fechaHoraEstado>
+    </estadoHistorico>
+  </arrayHistorialEstados>
+</ConsultarHistorialEstadosComprobanteReturnType>
+
+CUIT: 30506775244
+Resultado Consulta Comprobante: 
+
+<ConsultarHistorialEstadosComprobanteReturnType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idComprobante>
+    <CUITEmisor>30529923461</CUITEmisor>
+    <codTipoCmp>201</codTipoCmp>
+    <ptoVta>252</ptoVta>
+    <nroCmp>3</nroCmp>
+  </idComprobante>
+  <arrayHistorialEstados>
+    <estadoHistorico>
+      <estado>PendienteRecepcion</estado>
+      <fechaHoraEstado>2019-09-24T09:20:37</fechaHoraEstado>
+    </estadoHistorico>
+  </arrayHistorialEstados>
+</ConsultarHistorialEstadosComprobanteReturnType>
+
+
+CUIT: 30506775244
+Resultado Consulta Comprobante: 
+
+
+
+string xml = @'<ConsultarHistorialEstadosComprobanteReturnType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idComprobante>
+    <CUITEmisor>30529923461</CUITEmisor>
+    <codTipoCmp>203</codTipoCmp>
+    <ptoVta>252</ptoVta>
+    <nroCmp>1</nroCmp>
+  </idComprobante>
+  <arrayHistorialEstados>
+    <estadoHistorico>
+      <estado>PendienteRecepcion</estado>
+      <fechaHoraEstado>2019-09-18T14:00:18</fechaHoraEstado>
+    </estadoHistorico>
+    <estadoHistorico>
+      <estado>Recepcionado</estado>
+      <fechaHoraEstado>2019-09-20T00:30:22</fechaHoraEstado>
+    </estadoHistorico>
+  </arrayHistorialEstados>
+</ConsultarHistorialEstadosComprobanteReturnType>';
+
+XmlDocument doc = new XmlDocument();
+doc.LoadXml(xml);
+
+string json = JsonConvert.SerializeXmlNode(doc);
+
+Console.WriteLine(json);
+// {
+//   "?xml": {
+//     "@version": "1.0",
+//     "@standalone": "no"
+//   },
+//   "root": {
+//     "person": [
+//       {
+//         "@id": "1",
+//         "name": "Alan",
+//         "url": "http://www.google.com"
+//       },
+//       {
+//         "@id": "2",
+//         "name": "Louis",
+//         "url": "http://www.yahoo.com"
+//       }
+//     ]
+//   }
+// }
+
+            Dim respuesta As String = "<ConsultarHistorialEstadosComprobanteReturnType xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>   <idComprobante>     <CUITEmisor>30529923461</CUITEmisor>      <codTipoCmp>203</codTipoCmp>     <ptoVta>252</ptoVta>     <nroCmp>1</nroCmp>   </idComprobante>   <arrayHistorialEstados>     <estadoHistorico>       <estado>PendienteRecepcion</estado>       <fechaHoraEstado>2019-09-18T14:00:18</fechaHoraEstado>     </estadoHistorico>     <estadoHistorico>       <estado>Recepcionado</estado>       <fechaHoraEstado>2019-09-20T00:30:22</fechaHoraEstado>     </estadoHistorico>   </arrayHistorialEstados> </ConsultarHistorialEstadosComprobanteReturnType>"
+
+            Dim doc As New Xml.XmlDocument
+            doc.LoadXml(respuesta)
+            Dim json As String = Newtonsoft.Json.JsonConvert.SerializeXmlNode(doc)
+            Console.WriteLine(json)
+
+
+System.Net.Mail.MailMessage mailNotification = new System.Net.Mail.MailMessage();
+mailNotification.From = new System.Net.Mail.MailAddress(Parametros.GetParameter("MailSenderAddress"), Parametros.GetParameter("MailSenderDisplayName"));
+
+
+
+----------------------------------------
+--FIN Batch estados FCE-
+Switch: Pend
+ultimoEstadoLetra: P
+Ultimoestado: PendienteRecepcion
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":262,"nroCmp":1},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-10-02T00:30:28"},{"estado":0,"fechaHoraEstado":"2019-09-30T16:37:08"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":262,"nroCmp":1},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-10-02T00:30:28"},{"estado":0,"fechaHoraEstado":"2019-09-30T16:37:08"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":262,"nroCmp":1}
+Switch: Pend
+ultimoEstadoLetra: P
+Ultimoestado: PendienteRecepcion
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":5},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-04T11:53:29"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":5},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-04T11:53:29"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":5}
+Switch: Pend
+ultimoEstadoLetra: P
+Ultimoestado: PendienteRecepcion
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":4},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-04T10:37:28"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":4},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-04T10:37:28"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":4}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":3},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-09-28T00:30:18"},{"estado":0,"fechaHoraEstado":"2019-09-26T10:29:27"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":3},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-09-28T00:30:18"},{"estado":0,"fechaHoraEstado":"2019-09-26T10:29:27"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":3}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":2},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-09-26T00:30:23"},{"estado":0,"fechaHoraEstado":"2019-09-24T16:20:28"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":2},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-09-26T00:30:23"},{"estado":0,"fechaHoraEstado":"2019-09-24T16:20:28"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":2}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":1},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-19T12:06:24"},{"estado":1,"fechaHoraEstado":"2019-09-21T00:30:12"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":1},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-19T12:06:24"},{"estado":1,"fechaHoraEstado":"2019-09-21T00:30:12"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":262,"nroCmp":1}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":252,"nroCmp":2},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T15:54:12"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:21"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":252,"nroCmp":2},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T15:54:12"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:21"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":252,"nroCmp":2}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":252,"nroCmp":1},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T14:00:18"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:22"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":252,"nroCmp":1},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T14:00:18"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:22"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":203,"ptoVta":252,"nroCmp":1}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":12},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T16:57:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:10"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":12},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T16:57:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:10"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":12}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":11},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T12:48:35"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:08"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":11},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T12:48:35"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:08"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":11}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":10},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T10:27:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:06"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":10},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T10:27:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:06"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":10}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":9},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:07"},{"estado":0,"fechaHoraEstado":"2019-10-01T10:27:41"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":9},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:07"},{"estado":0,"fechaHoraEstado":"2019-10-01T10:27:41"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":9}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":8},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T10:24:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:06"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":8},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T10:24:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:06"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":8}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":7},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T10:22:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:08"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":7},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-10-01T10:22:42"},{"estado":1,"fechaHoraEstado":"2019-10-03T00:30:08"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":7}
+Switch: Pend
+ultimoEstadoLetra: P
+Ultimoestado: PendienteRecepcion
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":6},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-30T16:27:08"},{"estado":1,"fechaHoraEstado":"2019-10-02T00:30:29"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":6},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-30T16:27:08"},{"estado":1,"fechaHoraEstado":"2019-10-02T00:30:29"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":6}
+Switch: Pend
+ultimoEstadoLetra: P
+Ultimoestado: PendienteRecepcion
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":5},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-30T12:23:51"},{"estado":1,"fechaHoraEstado":"2019-10-02T00:30:27"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":5},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-30T12:23:51"},{"estado":1,"fechaHoraEstado":"2019-10-02T00:30:27"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":5}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":4},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-24T11:27:24"},{"estado":1,"fechaHoraEstado":"2019-09-26T00:30:20"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":4},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-24T11:27:24"},{"estado":1,"fechaHoraEstado":"2019-09-26T00:30:20"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":4}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":3},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-09-26T00:30:20"},{"estado":0,"fechaHoraEstado":"2019-09-24T09:20:37"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":3},"arrayHistorialEstados":[{"estado":1,"fechaHoraEstado":"2019-09-26T00:30:20"},{"estado":0,"fechaHoraEstado":"2019-09-24T09:20:37"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":3}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":2},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T14:36:20"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:22"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":2},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T14:36:20"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:22"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":2}
+Switch: Rece
+ultimoEstadoLetra: C
+Ultimoestado: Recepcionado
+AFIP Response Estado FCE HISTORIA: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":1},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T11:17:26"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:21"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Response Estado FCE: {"idComprobante":{"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":1},"arrayHistorialEstados":[{"estado":0,"fechaHoraEstado":"2019-09-18T11:17:26"},{"estado":1,"fechaHoraEstado":"2019-09-20T00:30:21"}],"arrayErrores":null,"arrayErroresFormato":null}
+AFIP Request Estado FCE: {"CUITEmisor":30529923461,"codTipoCmp":201,"ptoVta":252,"nroCmp":1}
+--INI Batch estados FCE- Cantidad Docs:20

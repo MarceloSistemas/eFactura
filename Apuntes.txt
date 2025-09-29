@@ -1,0 +1,113 @@
+
+
+Proyecto Toyota
+Es un workflow
+SMART
+
+de evalauci�n de capacidades
+en la etapa 1 se definen objetivos, planificacion
+y responsabilidades del puesto, se suponen que estan, pero a veces no, y se dan de alta entre el evaluado, el jefe y rrhh
+al a�o siguiente se copian
+a medio a�o hay revisi�n donde se pueden replantear obj
+fin de a�o se evaluan obj, responsabilidades (por ahora no) y competencias
+
+
+FCE Notas de debito y/o credito
+se hace una FCE y pagan como un anticipo (aprovisionamiento de materiales o algo as�)
+
+Si se emita una FCE
+Y el comprador la rechaza
+igual hay que hacer una NC para netear la cuentsa corriente
+
+Las FCE se pueden anular
+mientras est�n en estado PENDIENTES o ANULADAS
+
+
+Si el comprador a�n no lo acept� se puede hacer una NC y ND relacionada a la FCE que va a la Cta Cte de
+
+correspondiente a la FCE.
+
+Graabar en los comprobantes mayor a 200
+los comprobantes nacen con estado por default P PENDIENTE
+la FCE Puede pasar de P a A ACEPTADA
+la FCE Puede pasar de P a R RECHAZADA
+mandar un mail cuando cambia el estado, a A o R.
+No se guarda historia de estados
+Las menores de 200 nacen an A ACEPTADAS aunque ni se hayan procesado
+
+
+
+siempre se manda una factura y atrás una nota de credito 
+la nota de credito es por un anticipo, menor al total, hecho por el comprador
+
+Estados de los comprobantes
+
+P. Pendiente de Recepción
+C. Recepcionado
+R. Rechazado
+A. Aceptado
+I. Informada
+
+Estados de los Comprobantes: Los comprobantes son la Factura, la Nota de Débito y la Nota de Crédito.
+
+P. Pendiente de Recepción
+o En el momento en que son generados, los comprobantes inician en el estado “Pendiente de Recepción”, y son incorporados en el cálculo del saldo de la operación en la cuenta corriente.
+
+C. Recepcionado
+o Transcurrido el plazo normado tras el envío de la comunicación al domicilio fiscal electrónico del comprador, el comprobante pasa al estado “Recepcionado”.
+
+R. Rechazado
+o Un comprobante del tipo Nota de Débito y Nota de Crédito, si es emitido previo a la aceptación o rechazo de la Factura a la que se encuentra asociado, puede rechazarse individualmente, pasando al estado “Rechazado”. De esta manera será omitido del cálculo del saldo negociable de la Factura de Crédito.
+
+A. Aceptado
+o Al ser Aceptada la Factura de Crédito, ésta y todos los comprobantes del tipo Nota de Débito y Nota de Crédito (que no hayan sido rechazados individualmente con anterioridad), pasarán al estado “Aceptado”.
+
+R. Rechazado (ES ESTADO FINAL)
+o Al ser Rechazada la Factura de Crédito, ésta y todos los comprobantes del tipo Nota de Débito y Nota de Crédito, pasarán al estado “Rechazado”.
+
+I. Informada
+o Cuando el vendedor solicita que la Factura sea informada al Agente de Depósito Colectivo, la misma, para al estado “Informada”.
+
+P. Pendiente de Recepción
+C. Recepcionado
+o Los comprobantes, Nota de Débito y Nota de Crédito, que son emitidos con marca de anulación y/o emitidos con posterioridad a la aceptación o rechazo de la Factura de Crédito (directa o indirectamente) relacionada, sólo pasan por el estado “Pendiente de Recepción” y luego del plazo establecido a “Recepcionado”.
+
+
+
+Estados de la Cuenta Corriente de una Factura de Crédito Electrónica MiPyme:
+
+Modificable
+o Al emitirse la Factura se genera su cuenta corriente en estado “Modificable” que permite alterar el saldo de la operación a aceptar o rechazar por el comprador.
+
+Aceptada
+o Si el comprador acepta la operación y no informa cancelación total, la cuenta corriente pasa al estado “Aceptada”, con un saldo negociable positivo.
+
+Cancelada Totalmente
+o Si el comprador acepta la operación e informa cancelación total, la cuenta corriente pasa al estado “Cancelada Totalmente”.
+
+Rechazada
+o Si el comprador rechaza la operación, la cuenta corriente pasa al estado “Rechazada”.
+
+Informada
+o Una vez en estado “Aceptada”, el comprador puede informar la cancelación total o el vendedor puede informar la factura al Agente de Depósito Colectivo, lo que suceda primero. En estos casos, la cuenta corriente terminará en el estado “Cancelada Totalmente” o “Informada”, respectivamente.
+
+
+Actores y Acciones:
+o Comprador: El comprador podrá ejecutar las operaciones de:
+ - Aceptar la Factura de Crédito y el saldo de la Cuenta Corriente
+ - Rechazar la Factura de Crédito y el saldo de la Cuenta Corriente
+ - Rechazar individualmente una Nota de Débito o Crédito
+ - Informar la Cancelación Total del saldo de la Cuenta Corriente de la Factura
+o Vendedor: El vendedor puede ejecutar la siguiente operación:
+ - Informar la Factura Aceptada con saldo negociable positivo al Agente de Depósito Colectivo.
+o Sistema AFIP: Se corren las siguiente operaciones automáticas según los plazos normados:
+ - Se da por “Recepcionado” un comprobante vencido el plazo de notificación normado.
+ - Se ejecuta la Aceptación Tácita de aquellas Cuentas Corrientes en estado “Modificable” vencido el plazo de aceptación normado.
+	
+
+	Error en Replicador: CopiarDocumentos. Valor erroneo en JDE  proddta.f56BEJFEL.anulacion   The value for column 'anulacion' in table 'Documentos' is DBNull.  Source: ifsaReplicator  StackTrace:    at ifsaReplicator.DocumentosIfsa.DocumentosRow.get_anulacion() in C:\Proyectos\eFactura\ifsaReplicator\DocumentoIfsa.Designer.vb:line 1185     at ifsaReplicator.Module1.CopiarDocumentos(DataAccess objDalJDE) in C:\Proyectos\eFactura\ifsaReplicator\Module1.vb:line 132  Conversion from type 'DBNull' to type 'String' is not valid.  Source: Microsoft.VisualBasic  StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)     at ifsaReplicator.DocumentosIfsa.DocumentosRow.get_anulacion() in C:\Proyectos\eFactura\ifsaReplicator\DocumentoIfsa.Designer.vb:line 1183    
+
+	The value for column 'anulacion' in table 'DOCUMENTOS' is DBNull.  Source: eFactura.Core  StackTrace:    at eFactura.Core.DocumentoRecord.DOCUMENTOSRow.get_anulacion() in c:\Proyectos\eFactura\eFactura.Core\DocumentoRecord.Designer.cs:line 2920     at eFactura.Core.AfipConnector.FECAECabRequest(String documentId, DocumentoRecord tables, String& nota, String& cae, String& CAEFchVto, String& ErrorMsg) in c:\Proyectos\eFactura\eFactura.Core\AfipConnector.cs:line 239  Unable to cast object of type 'System.DBNull' to type 'System.String'.  Source: eFactura.Core  StackTrace:    at eFactura.Core.DocumentoRecord.DOCUMENTOSRow.get_anulacion() in c:\Proyectos\eFactura\eFactura.Core\DocumentoRecord.Designer.cs:line 2915    
+
+
+ActualizarEstado  The value for column 'CAE' in table 'DOCUMENTOS' is DBNull.  Unable to cast object of type 'System.DBNull' to type 'System.String'.    

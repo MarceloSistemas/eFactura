@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EMPRESASRecord" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EMPRESASRecord" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="EMPRESASRecord" msprop:Generator_UserDSName="EMPRESASRecord">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EMPRESAS" msprop:Generator_TableClassName="EMPRESASDataTable" msprop:Generator_TableVarName="tableEMPRESAS" msprop:Generator_RowChangedName="EMPRESASRowChanged" msprop:Generator_TablePropName="EMPRESAS" msprop:Generator_RowDeletingName="EMPRESASRowDeleting" msprop:Generator_RowChangingName="EMPRESASRowChanging" msprop:Generator_RowEvHandlerName="EMPRESASRowChangeEventHandler" msprop:Generator_RowDeletedName="EMPRESASRowDeleted" msprop:Generator_RowClassName="EMPRESASRow" msprop:Generator_UserTableName="EMPRESAS" msprop:Generator_RowEvArgName="EMPRESASRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EMPRESA_ID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnEMPRESA_ID" msprop:Generator_ColumnPropNameInRow="EMPRESA_ID" msprop:Generator_ColumnPropNameInTable="EMPRESA_IDColumn" msprop:Generator_UserColumnName="EMPRESA_ID" type="xs:int" />
+              <xs:element name="CUIT" msprop:Generator_ColumnVarNameInTable="columnCUIT" msprop:Generator_ColumnPropNameInRow="CUIT" msprop:Generator_ColumnPropNameInTable="CUITColumn" msprop:Generator_UserColumnName="CUIT" type="xs:long" minOccurs="0" />
+              <xs:element name="PASSWORD" msprop:Generator_ColumnVarNameInTable="columnPASSWORD" msprop:Generator_ColumnPropNameInRow="PASSWORD" msprop:Generator_ColumnPropNameInTable="PASSWORDColumn" msprop:Generator_UserColumnName="PASSWORD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RAZON_SOCIAL" msprop:Generator_ColumnVarNameInTable="columnRAZON_SOCIAL" msprop:Generator_ColumnPropNameInRow="RAZON_SOCIAL" msprop:Generator_ColumnPropNameInTable="RAZON_SOCIALColumn" msprop:Generator_UserColumnName="RAZON_SOCIAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URL_AFIP_WSAA" msprop:Generator_ColumnVarNameInTable="columnURL_AFIP_WSAA" msprop:Generator_ColumnPropNameInRow="URL_AFIP_WSAA" msprop:Generator_ColumnPropNameInTable="URL_AFIP_WSAAColumn" msprop:Generator_UserColumnName="URL_AFIP_WSAA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URL_AFIP_WSFEv1" msprop:Generator_ColumnVarNameInTable="columnURL_AFIP_WSFEv1" msprop:Generator_ColumnPropNameInRow="URL_AFIP_WSFEv1" msprop:Generator_ColumnPropNameInTable="URL_AFIP_WSFEv1Column" msprop:Generator_UserColumnName="URL_AFIP_WSFEv1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RUTA_ARCHIVO_CERTIFICADO" msprop:Generator_ColumnVarNameInTable="columnRUTA_ARCHIVO_CERTIFICADO" msprop:Generator_ColumnPropNameInRow="RUTA_ARCHIVO_CERTIFICADO" msprop:Generator_ColumnPropNameInTable="RUTA_ARCHIVO_CERTIFICADOColumn" msprop:Generator_UserColumnName="RUTA_ARCHIVO_CERTIFICADO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAILS" msprop:Generator_ColumnVarNameInTable="columnEMAILS" msprop:Generator_ColumnPropNameInRow="EMAILS" msprop:Generator_ColumnPropNameInTable="EMAILSColumn" msprop:Generator_UserColumnName="EMAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TICKET_EXPIRED_DATE" msprop:Generator_ColumnVarNameInTable="columnTICKET_EXPIRED_DATE" msprop:Generator_ColumnPropNameInRow="TICKET_EXPIRED_DATE" msprop:Generator_ColumnPropNameInTable="TICKET_EXPIRED_DATEColumn" msprop:Generator_UserColumnName="TICKET_EXPIRED_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TICKET_TOKEN" msprop:Generator_ColumnVarNameInTable="columnTICKET_TOKEN" msprop:Generator_ColumnPropNameInRow="TICKET_TOKEN" msprop:Generator_ColumnPropNameInTable="TICKET_TOKENColumn" msprop:Generator_UserColumnName="TICKET_TOKEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TICKET_SIGN" msprop:Generator_ColumnVarNameInTable="columnTICKET_SIGN" msprop:Generator_ColumnPropNameInRow="TICKET_SIGN" msprop:Generator_ColumnPropNameInTable="TICKET_SIGNColumn" msprop:Generator_UserColumnName="TICKET_SIGN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URL_AFIP_WSAA_FECRED" msprop:Generator_ColumnVarNameInTable="columnURL_AFIP_WSAA_FECRED" msprop:Generator_ColumnPropNameInRow="URL_AFIP_WSAA_FECRED" msprop:Generator_ColumnPropNameInTable="URL_AFIP_WSAA_FECREDColumn" msprop:Generator_UserColumnName="URL_AFIP_WSAA_FECRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URL_AFIP_WSFEv1_FECRED" msprop:Generator_ColumnVarNameInTable="columnURL_AFIP_WSFEv1_FECRED" msprop:Generator_ColumnPropNameInRow="URL_AFIP_WSFEv1_FECRED" msprop:Generator_ColumnPropNameInTable="URL_AFIP_WSFEv1_FECREDColumn" msprop:Generator_UserColumnName="URL_AFIP_WSFEv1_FECRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TICKET_EXPIRED_DATE_FECRED" msprop:Generator_ColumnVarNameInTable="columnTICKET_EXPIRED_DATE_FECRED" msprop:Generator_ColumnPropNameInRow="TICKET_EXPIRED_DATE_FECRED" msprop:Generator_ColumnPropNameInTable="TICKET_EXPIRED_DATE_FECREDColumn" msprop:Generator_UserColumnName="TICKET_EXPIRED_DATE_FECRED" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TICKET_TOKEN_FECRED" msprop:Generator_ColumnVarNameInTable="columnTICKET_TOKEN_FECRED" msprop:Generator_ColumnPropNameInRow="TICKET_TOKEN_FECRED" msprop:Generator_ColumnPropNameInTable="TICKET_TOKEN_FECREDColumn" msprop:Generator_UserColumnName="TICKET_TOKEN_FECRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TICKET_SIGN_FECRED" msprop:Generator_ColumnVarNameInTable="columnTICKET_SIGN_FECRED" msprop:Generator_ColumnPropNameInRow="TICKET_SIGN_FECRED" msprop:Generator_ColumnPropNameInTable="TICKET_SIGN_FECREDColumn" msprop:Generator_UserColumnName="TICKET_SIGN_FECRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFO_AUXILIAR" msprop:Generator_ColumnVarNameInTable="columnINFO_AUXILIAR" msprop:Generator_ColumnPropNameInRow="INFO_AUXILIAR" msprop:Generator_ColumnPropNameInTable="INFO_AUXILIARColumn" msprop:Generator_UserColumnName="INFO_AUXILIAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//EMPRESAS" />
+      <xs:field xpath="EMPRESA_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,626 @@
+
+.ApplicationCombo
+{
+    margin-left:5px;
+    background-color:#4e505c;
+	font-weight:bold;
+	color:White;
+	font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;       
+}
+
+
+.UserLabel{display:none; visibility:hidden;}
+a {
+	text-decoration:none;
+}
+
+.LogOut {
+	margin-left:15px;
+	margin-right:100px;
+    color:#777777;
+    font-family:Verdana;
+    font-size:11px;
+    text-transform: uppercase;
+}
+.ChangePassword{ 
+	margin-left:20px;
+	padding-left:20px;
+	border-left:solid;
+	border-left-color:#999999;
+	border-left-width:1px;
+    color:#777777;
+    font-family:Verdana;
+    font-size:11px;
+    text-transform: uppercase;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	height:auto;	
+	margin-top:1px;
+background-position: center -120px;
+	background-color:#dcdfe3;
+	background-image:url(images/fondo1.png); 
+	background-repeat:no-repeat;
+	
+}
+body form 
+{
+	margin:auto;
+	margin-top:1px;	 
+	height:auto;    
+	text-align: center;
+	width:950px;	
+
+}
+
+
+.ToolBar {
+	width:100%;
+	height:auto;
+	margin-bottom:1px;
+	border-bottom:solid;
+	border-bottom-color:#CCCCCC;
+	border-bottom-width:1px;
+	
+}
+.ToolbarButton {
+  cursor:hand;
+  color:#324452;
+  font-weight:bold;
+  text-align:center;
+  margin-left:8px;   
+}
+.ToolbarButtonDisabled {
+	cursor:hand;
+	color:#ACA899;
+	font-weight:bold;
+	text-align:center;
+	margin-left:10px;
+}
+.ToolbarButtonHover {
+  background-color:#F0F0F0 ;
+  cursor:hand;
+  color:#324452;
+  font-weight:bold;
+  text-align:center;
+  margin-left:8px;
+}
+
+.ToolbarButtonsBar
+{height:18px; padding-top:4px;}
+
+.ToolbarTitle {
+	font-size:16px;
+	font-weight:bold;
+	color: white;
+	background-color:#52BDEC;
+	height:22px;
+	text-indent:10px; 
+	padding-top:3px;
+	
+	width:100%;
+}
+.ToolbarDetail {
+  border: solid 1 #BBC9D6;
+  margin-top:4px;
+  margin-right:2px;
+}
+.ToolbarTitleDetail {
+  font-weight:bold;
+  background-color:#336699;
+  height:16px;
+  color: #F5F5F5;
+  background-color:#336699;
+}
+.MenuTitle {
+	background-color:white;
+	color:#336699;
+	font-weight:bold;
+	vertical-align:middle;
+	height:50px;
+	left:25px;
+}
+.MenuBar {
+   
+   height:20px;
+     
+   padding-left:150px;
+   
+   border-top:solid;
+   border-top-width:0px;
+   border-top-color:#CCCCCC;
+   border-bottom:solid;
+   border-bottom-width:0px;
+   border-bottom-color:#CCCCCC;
+   padding-bottom:10px;
+   text-align:left;
+   font-family:Verdana;
+   font-size:11px;
+   text-transform: uppercase;
+}
+.MenuButton {
+   color:#777777;
+   margin-left:15px; 
+}
+.MenuButtonDisabled
+{
+   background-color:transparent ;   
+   color:#ACA899;
+   margin-left:8px;
+}
+.MenuButtonHover
+{
+   color:#777777;
+    margin-left:15px; 
+  text-decoration:underline;
+  }
+.MenuButtonSelected
+{
+  color:#777777;
+  font-weight:bold;
+  text-decoration:none;
+  margin-left:15px;
+}
+
+.OptionBar {
+   
+   height:20px;
+  
+   padding-left:120px;
+   padding-bottom:2px;
+   text-align:left;
+   padding-top:5px;
+   font-family:Verdana;
+   font-size:11px;
+   text-transform: uppercase;
+}
+.OptionButton
+{
+  background-color:transparent ;
+   color:#777777;
+  padding-left:15px;
+ }
+
+.OptionButtonDisabled
+{
+  background-color:transparent ;
+  
+  color:#ACA899;
+  margin-left:15px;
+
+}
+
+.OptionButtonSelected
+
+{
+   
+  color:#777777;
+  text-decoration:underline;
+  margin-left:15px;
+}
+
+.OptionButtonHover
+{
+  background-color:Silver ;
+  
+  color:#0f2672; 
+  margin-left:15px;
+} 
+
+
+.Label
+{
+  font-size:11px;
+  color: #324452;
+}
+
+.LabelM
+{
+  font-size:10pt;
+  font-weight:bold;
+}
+.LabelError
+{
+  font-size:10pt;
+  font-weight:bold;
+  color:Red;
+  
+}
+
+.TableBorder
+{
+	
+	font-size:11px;	
+	width:950px;
+	background-color:White;
+	background-position: center center;
+	text-align:left;
+	margin-left:1px;	 
+	border:solid;
+	border-color:#CCCCCC;
+	border-width:1px;
+	margin-top:10px;
+}
+.TabStrip
+{
+    font-size:11px;
+    margin-top:5px;
+    margin-left:1px;
+    background-color:white;
+    border:solid 1px white;
+    
+}
+.TabPage
+{
+	background-color:#ECE9D8;
+	font-size:11px;	
+	border:solid 1px #ECE9D8;
+	border-left-color:#ACA899;
+	height:20px;
+}
+.TabStripSpace
+{
+	background-color:white;
+	border:solid 1px white;
+	border-bottom-color:#DBEAF5;
+	height:20px;
+}
+.TabSelected
+{
+	background-color:#F1F4F7;
+	
+	border:solid 1px #DBEAF5;
+	border-left-color:White;
+	height:20px;
+	min-width:120px;
+	font-size:11px;	
+	text-align:center;
+	color: #17518D;
+	font-weight:bold;
+	border-bottom-color:#F1F4F7;
+} 
+.TabUnSelected
+{
+	font-weight:bold;
+	background-color:#FFFFFF;
+	text-align:center;
+	border:solid 1px #DBEAF5;
+	border-left-color:White;
+	height:20px;
+	min-width:120px;
+	font-size:11px;	
+	color: #17518D;
+}	
+
+.Panel
+{ 
+  font-size:11px;
+  background-color:#F0F0F0;
+  min-height:50px;
+  margin-top:1px;
+  width:930px;
+  padding:10px;
+   
+  padding-bottom:20px;
+  
+}
+
+.SearchPanel
+{
+  font-size:11px;
+  width:930px;
+  padding:10px;
+  background-color:#F0F0F0;
+  
+  
+}
+.ComboBox
+{ 
+  font-size:11px;
+  color: #324452;
+  border-color: #CCCCCC;
+  border-width:1px;
+  border-style:solid;
+}
+.TextBox
+{
+  font-size:11px;
+  border-color:#CCCCCC;
+  border-width:1px;
+  border-style:solid;
+  color: #324452;
+  width:800px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.InputFile
+{
+  font-size:11px;
+  border-color: #7F9DB9;
+  border-width:1px;
+  border-style:solid;
+  padding-left:1px;
+  color: #324452;
+  width:220px;
+}
+.Button
+{
+  font-size:11px;
+  color:White;
+  background-color:#0257A6;
+  font-weight:bold;
+  height:20px;    
+  padding-bottom:2px;
+  
+  
+}
+
+.DataGrid
+{	
+    border-top: solid 1px #ECE9D8;
+    border-bottom: solid 1px #ECE9D8;
+    border-color:#ECE9D8;
+    font-size:11px;	  
+}
+
+.DataGridHeader {
+	background-color:#BBC9D6;
+	color:#324452;
+	font-weight:bold;
+	height:20px;
+}
+.DataGridHeader td
+{
+	border: solid 1px #ECE9D8;
+	padding-left:5px;
+	padding-right:2px;
+	height:23px;	 
+}
+
+.DataGridItem
+{
+	color:#666666;
+	height:23px;	
+	cursor:pointer;
+	height:23px;	 
+}
+
+.DataGridItem td
+{
+	border: solid 1px #ECE9D8;
+	padding-left:5px;
+	padding-right:2px;
+	height:23px;
+}
+.DataGridItem a:link, .DataGridItem a:active, .DataGridItem a:visited, .DataGridItem a:hover {
+	color:#666666;
+	height:23px;	
+	
+}
+
+.DataGridAlternatingItem
+{
+	color: #666666;
+	height:23px;    
+	cursor:pointer;
+	height:23px;	 
+}
+.DataGridAlternatingItem td
+{
+	border: solid 1px #ECE9D8;
+	padding-left:5px;
+	padding-right:2px;
+	height:23px;
+}
+
+.DataGridAlternatingItem a:link, .DataGridAlternatingItem a:active, .DataGridAlternatingItem a:visited, .DataGridAlternatingItem a:hover {
+	color:#666666;
+	height:23px;	
+}
+
+
+.DataGridSelectedItem
+{
+	background-color:#FFFFD6;
+	color: #666666;
+	height:23px;   
+	font-weight:bold; 
+	
+}
+
+.DataGridSelectedItem td
+{
+	border: solid 1px #ECE9D8;
+	padding-left:5px;
+	padding-right:2px;
+	height:23px;	 
+}
+.DataGridSelectedItem a:link, .DataGridSelectedItem a:active, .DataGridSelectedItem a:visited, .DataGridSelectedItem a:hover {
+	color: #666666;
+	height:23px;	 
+}
+
+.FlagsPanel{width:190px;float:right;text-align:left;padding-top:1px;height:30px}
+.ES_FLAG, .ES_FLAG a:link, ES_FLAG a:active,  ES_FLAG a:visited,  ES_FLAG a:hover
+	{margin-right:5px; 
+          width:50px;height:24px;
+          float:left;
+          color:Black;
+          font-weight:bold;
+          font-size:12px;
+          cursor:hand;
+          }
+          
+.PT_FLAG {margin-right:5px; 
+          background-image:url(images/PTFlag.png);
+          background-repeat:no-repeat; 
+          width:32px;height:24px;
+          float:left;
+          font-size:0px;}
+
+.EN_FLAG, .EN_FLAG a:link, EN_FLAG a:active,  EN_FLAG a:visited,  EN_FLAG a:hover
+	{margin-right:5px; 
+          width:50px;height:24px;
+          float:left;
+          color:Black;
+          font-weight:bold;
+          font-size:12px;
+          cursor:hand;
+          }
+          
+          
+.HeaderPanel{width:950px;height:55px;}
+.LabelTitle
+{
+	font-weight: bold;
+	font-size: 28px;
+	text-indent: 0px;
+	color:#0257A6;
+	text-align: center;
+	margin-top:0px;
+	padding-top:0px;
+	float:left;
+	margin-left:220px;
+	width:500px;
+	padding-top:15px;
+	
+}
+
+        
+.autocomplete_completionListElement 
+{  
+	visibility : hidden;
+	margin : 0px!important;
+	background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 200px;
+    text-align : left; 
+    list-style-type : none;
+}
+.autocomplete_highlightedListItem
+{
+	background-color: #ffff99;
+	color: black;
+	padding: 1px;
+}
+.autocomplete_listItem 
+{
+	background-color : window;
+	color : windowtext;
+	padding : 1px;
+}
+
+.TabbedPanelsContent
+{
+	background-color:#F0F0F0;
+}
+
+/* START HOME TABBED CONTENT */
+ .TabbedPanels 
+{
+	text-align:left;
+	margin: 0px;    
+	padding: 0px;
+	float: left;
+	clear: none;
+	width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+	background-color: #FFFFFF;
+}
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+}
+.TabbedPanelsTab {
+	height:auto;
+	float: left;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin: 0px 1px 0px 0px;
+	font-size:11px;
+	font-weight:bold;
+	color: #324452;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	border-left:solid;
+	border-left-color:#FFFFFF;
+	border-left-width:1px;
+	
+}
+.TabbedPanelsTabHover {
+	color:#333333;
+	
+}
+.TabbedPanelsTabSelected {
+	border-left: solid 1px #CFCFCF;
+	border-top: solid 1px #CFCFCF;
+	border-right: solid 1px #CFCFCF;
+	border-bottom: solid 1px #FFFFFF;
+		background-color: #F0F0F0;
+}
+.TabbedPanelsTab a {
+	color: #729F9A;
+	text-decoration: none;
+}
+.TabbedPanelsContentGroup {
+	clear: both;
+	border-left: solid 1px #CFCFCF;
+	border-bottom: solid 1px #CFCFCF;
+	border-top: solid 1px #CFCFCF;
+	border-right: solid 1px #CFCFCF;
+	background-color: #F0F0F0;
+	height:auto;
+	width:938px;
+	padding:5px;
+}
+
+.PanelControls
+{ 
+  font-size:11px;
+  background-color:#F0F0F0;
+  min-height:50px;
+  border-top:solid 1px #F0F0F0;
+  padding-top:10px;
+  
+   
+  padding-bottom:20px;
+  
+}
+
+.PanelSearchResultsTitle, .PanelContentTitle_Search
+{
+    display:none;
+}
+
+.PanelSearchForm
+{
+  font-size:11px;
+  padding:10px;
+  background-color:#F0F0F0;
+}
+
+.TableBorder, .content_wrapper
+{
+	
+	font-size:11px;	
+	width:950px;
+	background-color:White;
+	background-position: center center;
+	text-align:left;
+	margin-left:1px;	 
+	border:solid;
+	border-color:#CCCCCC;
+	border-width:1px;
+	margin-top:10px;
+}

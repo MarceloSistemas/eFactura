@@ -1,0 +1,119 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DOCUMENTOSRecord" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="DOCUMENTOSRecord" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DOCUMENTOS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOCUMENTO_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPRESA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CbteTipo" type="xs:int" minOccurs="0" />
+              <xs:element name="PtoVta" type="xs:int" minOccurs="0" />
+              <xs:element name="CbteNro" type="xs:int" minOccurs="0" />
+              <xs:element name="Concepto" type="xs:int" minOccurs="0" />
+              <xs:element name="DocTipo" type="xs:int" minOccurs="0" />
+              <xs:element name="DocNro" type="xs:long" minOccurs="0" />
+              <xs:element name="CbteFecha" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ImpTotal" type="xs:double" minOccurs="0" />
+              <xs:element name="ImpTotConc" type="xs:double" minOccurs="0" />
+              <xs:element name="ImpNeto" type="xs:double" minOccurs="0" />
+              <xs:element name="ImpOpEx" type="xs:double" minOccurs="0" />
+              <xs:element name="ImpIva" type="xs:double" minOccurs="0" />
+              <xs:element name="ImpTrib" type="xs:double" minOccurs="0" />
+              <xs:element name="FchServDesde" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FchServHasta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FchVtoPago" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MonId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MonCotiz" type="xs:double" minOccurs="0" />
+              <xs:element name="ESTADO_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOTAS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_ALTA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FECHA_ACTUALIZACION" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ERP_NOMBRE_ARCHIVO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CAE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CAEFchVto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Error" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//DOCUMENTOS" />
+      <xs:field xpath="DOCUMENTO_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

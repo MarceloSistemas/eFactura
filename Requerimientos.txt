@@ -1,0 +1,39 @@
+
+Error 19/10/2020
+
+[12:23, 10/19/2020] Alejandro Cichero: hola pablo
+[12:23, 10/19/2020] Alejandro Cichero: ?<?xml version="1.0" encoding="utf-8"?><FECAEResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><FeCabResp xmlns="http://ar.gov.afip.dif.FEV1/"><Cuit>30529923461</Cuit><PtoVta>262</PtoVta><CbteTipo>201</CbteTipo><FchProceso>20201019121909</FchProceso><CantReg>1</CantReg><Resultado>R</Resultado><Reproceso>N</Reproceso></FeCabResp><FeDetResp xmlns="http://ar.gov.afip.dif.FEV1/"><FECAEDetResponse><Concepto>1</Concepto><DocTipo>80</DocTipo><DocNro>30685889397</DocNro><CbteDesde>141</CbteDesde><CbteHasta>141</CbteHasta><CbteFch>20201019</CbteFch><Resultado>R</Resultado><CAE /><CAEFchVto /></FECAEDetResponse></FeDetResp><Errors xmlns="http://ar.gov.afip.dif.FEV1/"><Err><Code>502</Code><Msg>Error interno de base de datos -  Autorizador CAE - TransacciÃ³n Activa</Msg></Err></Errors></FECAEResponse>
+
+[14:22, 10/19/2020] PK: Bueno, te digo lo que yo veo, hatsa las 14:01 hubo errores al tratar de acceder al AFIP : "Error de la solicitud con el código de estado HTTP 503: Service Unavailable.  "
+
+Ahora veo que las facturas están pasando, úlitma que pasó: "AFIP: Doc/CAE/Vto: 01-201-0262-00000142                /70421603729231/20201019"
+
+
+Error 1/12/2020
+[11:42, 12/1/2020] Alejandro Cichero: buen dia Pablo
+[11:42, 12/1/2020] Alejandro Cichero: me da el siguiente error
+[11:42, 12/1/2020] Alejandro Cichero: 500 - Error interno de aplicacón: - Metodo FECAESolicitar,
+[12:21, 12/1/2020] PK: buen dia Ale, ahora me fijo
+
+A las 8:55 de hoy empezó a dar timeout la respuesta de AFIP
+A las 9:00 empezó a dar internal server error 500 la respuesta de AFIP
+El sitio de AFIp tarda entre 30 segundos y 2 minutos en resdponder, desde adentro del servidor de IFSA y desde afuera también desde mi casas
+
+base de datos:
+
+AFIP: Doc/CAE/Vto/error: 01-002-0052-00003908                ///500 - Error interno de aplicacón: - Metodo FECAESolicitar,  
+AFIP Response CAE: {"FeCabResp":{"Cuit":30529923461,"PtoVta":52,"CbteTipo":2,"FchProceso":"20201201122348","CantReg":1,"Resultado":"R","Reproceso":"N"},"FeDetResp":[{"CAE":"","CAEFchVto":"","Concepto":1,"DocTipo":80,"DocNro":30704776639,"CbteDesde":3908,"CbteHasta":3908,"CbteFch":"20201201","Resultado":"R","Observaciones":null}],"Events":null,"Errors":[{"Code":500,"Msg":"Error interno de aplicacón: - Metodo FECAESolicitar"}]}
+AFIP Request CAE: {"FeCabReq":{"CantReg":1,"PtoVta":52,"CbteTipo":2},"FeDetReq":[{"Concepto":1,"DocTipo":80,"DocNro":30704776639,"CbteDesde":3908,"CbteHasta":3908,"CbteFch":"20201201","ImpTotal":142025.8,"ImpTotConc":0.0,"ImpNeto":117376.69,"ImpOpEx":0.0,"ImpTrib":0.0,"ImpIVA":24649.11,"FchServDesde":"        ","FchServHasta":"        ","FchVtoPago":null,"MonId":"PES","MonCotiz":1.0,"CbtesAsoc":null,"Tributos":null,"Iva":[{"Id":5,"BaseImp":117376.69,"Importe":24649.11}],"Opcionales":null,"Compradores":null}]}
+
+
+CAE
+https://servicios1.afip.gov.ar/wsfev1/service.asmx
+AUTH
+https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL
+
+FECRED
+https://serviciosjava.afip.gob.ar/wsfecred/FECredService
+AUTH
+https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL
+
+

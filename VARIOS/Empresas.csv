@@ -1,0 +1,48 @@
+﻿EMPRESA_ID;CUIT;PASSWORD;RAZON_SOCIAL;URL_AFIP_WSAA;URL_AFIP_WSFEv1;RUTA_ARCHIVO_CERTIFICADO;EMAILS;TICKET_EXPIRED_DATE;TICKET_TOKEN;TICKET_SIGN
+1;30529923461;Marcelo;Interiur Forma SA;https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL;https://servicios1.afip.gov.ar/wsfev1/service.asmx;C:\Proyectos\eFactura\ifsa2019.pfx;30529923461;2019-07-15 21:51:25.137;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgc3JjPSJDTj13c2FhLCBPPUFGSVAsIEM9QVIsIFNFUklBTE5VTUJFUj1DVUlUIDMzNjkzNDUwMjM5IiBkc3Q9IkNOPXdzZmUsIE89QUZJUCwgQz1BUiIgdW5pcXVlX2lkPSIyNTIxMzQwOTExIiBnZW5fdGltZT0iMTU2MzE5NjgyNiIgZXhwX3RpbWU9IjE1NjMyNDAwODYiLz4KICAgIDxvcGVyYXRpb24gdHlwZT0ibG9naW4iIHZhbHVlPSJncmFudGVkIj4KICAgICAgICA8bG9naW4gZW50aXR5PSIzMzY5MzQ1MDIzOSIgc2VydmljZT0id3NmZSIgdWlkPSJTRVJJQUxOVU1CRVI9Q1VJVCAzMDUyOTkyMzQ2MSwgQ049YWRyaWFuMTIiIGF1dGhtZXRob2Q9ImNtcyIgcmVnbWV0aG9kPSIyMiI+CiAgICAgICAgICAgIDxyZWxhdGlvbnM+CiAgICAgICAgICAgICAgICA8cmVsYXRpb24ga2V5PSIzMDUyOTkyMzQ2MSIgcmVsdHlwZT0iNCIvPgogICAgICAgICAgICA8L3JlbGF0aW9ucz4KICAgICAgICA8L2xvZ2luPgogICAgPC9vcGVyYXRpb24+Cjwvc3NvPgo=;F7NeYGuuKgchQb0OGixzQzUv/GhYGMHqFPnJXbdTrZ0wCXAwhcwlfoCLNdch+M/6gvKubHqZTsemJGjJ9qNU3aSVkQA97ox5nh0gHC5bluzu2calPpqM4DCpBE5Ji58XgmnwJKBU4QY1lvUBVlpX0V9e1Vh97308iC9Z775oIp4=
+2;30517530766;Marcelo;La Salteña;https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL;https://servicios1.afip.gov.ar/wsfev1/service.asmx;C:\Proyectos\eFactura\SAP.p12;;2015-02-23 00:00:00.000;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgdW5pcXVlX2lkPSI3NDIwNzIyODIiIHNyYz0iQ049d3NhYSwgTz1BRklQLCBDPUFSLCBTRVJJQUxOVU1CRVI9Q1VJVCAzMzY5MzQ1MDIzOSIgZ2VuX3RpbWU9IjE0ODc3OTQyMDMiIGV4cF90aW1lPSIxNDg3ODM3NDYzIiBkc3Q9IkNOPXdzZmUsIE89QUZJUCwgQz1BUiIvPgogICAgPG9wZXJhdGlvbiB2YWx1ZT0iZ3JhbnRlZCIgdHlwZT0ibG9naW4iPgogICAgICAgIDxsb2dpbiB1aWQ9IlNFUklBTE5VTUJFUj1DVUlUIDMwNTE3NTMwNzY2LCBDTj1sYXNhMjAxNyIgc2VydmljZT0id3NmZSIgcmVnbWV0aG9kPSIyMiIgZW50aXR5PSIzMzY5MzQ1MDIzOSIgYXV0aG1ldGhvZD0iY21zIj4KICAgICAgICAgICAgPHJlbGF0aW9ucz4KICAgICAgICAgICAgICAgIDxyZWxhdGlvbiByZWx0eXBlPSI0IiBrZXk9IjMwNTE3NTMwNzY2Ii8+CiAgICAgICAgICAgIDwvcmVsYXRpb25zPgogICAgICAgIDwvbG9naW4+CiAgICA8L29wZXJhdGlvbj4KPC9zc28+Cgo=;BzHAILFYg4FGByxKEJKnqYAu4pFFM1XIeDJAoWaqeAkVBgVj3nFNou+yWlZUPEymnjzDwgvJSj0PUBowsjPUsbKz+NfPoVHW1pL523T3LYDfFrNoa2ufuMQ/9Leg8y3MVNcuMtW8CCttrEvCOTJlYhYolMWXcIb97U+CGLgY/oc=
+3;30689933226;Genmills1346790$;Genmills;https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL;https://servicios1.afip.gov.ar/wsfev1/service.asmx;C:\Proyectos\LS\gm.pfx;" ";2011-11-02 05:13:06.967;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgdW5pcXVlX2lkPSI2NDk3MjM5NzUiIHNyYz0iQ049d3NhYSwgTz1BRklQLCBDPUFSLCBTRVJJQUxOVU1CRVI9Q1VJVCAzMzY5MzQ1MDIzOSIgZ2VuX3RpbWU9IjEzMjAxODAxMjQiIGV4cF90aW1lPSIxMzIwMjIzMzg0Ii8+CiAgICA8b3BlcmF0aW9uIHZhbHVlPSJncmFudGVkIiB0eXBlPSJsb2dpbiI+CiAgICAgICAgPGxvZ2luIHVpZD0iQz1hciwgTz1nZW5lcmFsIG1pbGxzIGFyZ2VudGluYSBzb2NpZWRhZCBhbm9uaW1hLCBTRVJJQUxOVU1CRVI9Q1VJVCAzMDY4OTkzMzIyNiwgQ049Z21pZXJwLXNhcCIgc2VydmljZT0id3NtdHhjYSIgcmVnbWV0aG9kPSIyMiIgZW50aXR5PSIzMzY5MzQ1MDIzOSIgYXV0aG1ldGhvZD0iY21zIj4KICAgICAgICAgICAgPHJlbGF0aW9ucz4KICAgICAgICAgICAgICAgIDxyZWxhdGlvbiByZWx0eXBlPSI0IiBrZXk9IjMwNjg5OTMzMjI2Ii8+CiAgICAgICAgICAgIDwvcmVsYXRpb25zPgogICAgICAgIDwvbG9naW4+CiAgICA8L29wZXJhdGlvbj4KPC9zc28+Cgo=;qDJv4VIrz/FQZzmblU3TYb6o69qtirBTjmYG/LAnXqjSk8S61GVFzvcESmcyt7rP3I1htEt0J5B5XQryz8Ektx/bigZnfrcn/NsKB3CyYm748UeohZtrj+PCVaA9WbQ5wN3/kcCsQ5hqUK8Fuaxc5ltJz1Rcje9veoi9UtF8uh4=
+
+
+https://wswhomo.afip.gov.ar/wsfev1/service.asmx
+https://wsaa.afip.gov.ar/ws/services/LoginCms
+
+https://www.sistemasagiles.com.ar/trac/wiki/FacturaCreditoElectronica
+https://fwshomo.afip.gov.ar/wsfecred/FECredService?wsdl
+
+
+Web Services
+Endpoint	
+Service Name:	{http://ar.gob.afip.wsfecred/FECredService/}FECredService
+Port Name:	{http://ar.gob.afip.wsfecred/FECredService/}FECredServiceSOAP
+
+Information
+Address:	https://fwshomo.afip.gov.ar:443/wsfecred/FECredService
+WSDL:	https://fwshomo.afip.gov.ar:443/wsfecred/FECredService?wsdl
+Implementation class:	ar.gov.afip.wsfecred.service.FECredServicePortTypeImpl
+
+
+http://www.afip.gov.ar/ws/WSAA/cert-req-howto.txt
+
+Configuración para Producción[edit] ¶
+Para entrar en el ambiente de producción de AFIP, además de utilizar el instalador correcto (no el de evaluación, ver arriba), se debe usar las URL/WSDL correspondientes para cada webservice (modo homologación deshabilitado):
+
+WSAA:  https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl
+WSFE:  https://servicios1.afip.gov.ar/wsfe/service.asmx -obsoleto desde 2011 por AFIP-
+WSFEv1:  https://servicios1.afip.gov.ar/wsfev1/service.asmx?WSDL
+WSFEXv1:  https://servicios1.afip.gov.ar/wsfexv1/service.asmx?WSDL
+WSMTXCA:  https://serviciosjava.afip.gob.ar/wsmtxca/services/MTXCAService?wsdl
+WSBFEv1:  https://servicios1.afip.gov.ar/wsbfev1/service.asmx?WSDL
+
+
+https://serviciosjava.afip.gob.ar/wsfecred/FECredService
+https://fwshomo.afip.gov.ar/wsfecred/FECredService?wsdl
+
+https://wsaahomo.afip.gov.ar/ws/services/LoginCms
+
+https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL
+https://wsaahomo.afip.gov.ar/ws/services/LoginCms
+
+
+YPF 30515488479
+INTERIOR FORMA 30529923461

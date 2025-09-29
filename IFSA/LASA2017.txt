@@ -1,0 +1,8 @@
+1-openssl genrsa -out sap-privada 2048
+2-openssl req -new -key sap-privada -subj "/C=AR/O=LA SALTE#A SOCIEDAD ANONIMA/CN=gmipip-sap/serialNumber=CUIT 30517530766" -out sappedido
+3-We submitted  sappedido to AFIP and we downloaded LASA2017_763ed8cca1281741.crt
+4-openssl pkcs12 -export -inkey sap-privada -in GMIPIP-SAP_1aa0c49101d22502.crt -out sap.p12  (the password is: Marcelo)
+
+https://wsaa.afip.gov.ar/ws/services/LoginCms?WSDL
+
+https://servicios1.afip.gov.ar/wsfev1/service.asmx

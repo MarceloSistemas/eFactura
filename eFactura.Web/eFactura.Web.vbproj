@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBE35646-A58F-41BF-89CA-9643594E5BFE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eFactura.Web</RootNamespace>
+    <AssemblyName>eFactura.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eFactura.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eFactura.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.20821, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ASF4.BusFacades, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\ASF4.BusFacades.dll</HintPath>
+    </Reference>
+    <Reference Include="ASF4.BusObjects, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\ASF4.BusObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="ASF4.Dal, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\ASF4.Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="ASF4.WebControls, Version=3.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\ASF4.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ASFSec.BusEntities">
+      <HintPath>..\DLLS\ASFSec.BusEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="ASFSec.BusObjects">
+      <HintPath>..\DLLS\ASFSec.BusObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="ASFSec.Web">
+      <HintPath>..\DLLS\ASFSec.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ChangeLanguage.aspx" />
+    <Content Include="Admin\ChangePassword.aspx" />
+    <Content Include="Admin\DefaultPage.aspx" />
+    <Content Include="Admin\DownloadFile.aspx" />
+    <Content Include="Admin\frmCRUDsecAPPLICATIONS.aspx" />
+    <Content Include="Admin\frmCRUDsecCOUNTRIES.aspx" />
+    <Content Include="Admin\frmCRUDsecLANGUAGES.aspx" />
+    <Content Include="Admin\frmCRUDsecMENUS.aspx" />
+    <Content Include="Admin\frmCRUDsecOPTIONS.aspx" />
+    <Content Include="Admin\frmCRUDsecPARAMETERS.aspx" />
+    <Content Include="Admin\frmCRUDsecROLES.aspx" />
+    <Content Include="Admin\frmCRUDsecSTATES.aspx" />
+    <Content Include="Admin\frmCRUDsecUSERS.aspx" />
+    <Content Include="Admin\frmRsecLOG.aspx" />
+    <Content Include="Admin\frmSQLQuery.aspx" />
+    <Content Include="Admin\GetThumbNailFile.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\logout.aspx" />
+    <Content Include="eFactura\Default.aspx" />
+    <Content Include="eFactura\frmConsultaCUIT.aspx" />
+    <Content Include="eFactura\frmCRUDDOCUMENTOS.aspx" />
+    <Content Include="eFactura\frmCRUDEMPRESAS.aspx" />
+    <Content Include="eFactura\frmCRUDLOGS.aspx" />
+    <Content Include="eFactura\frmCRUDMAESTRO_CbteTipo.aspx" />
+    <Content Include="eFactura\frmCRUDMAESTRO_DocTipo.aspx" />
+    <Content Include="eFactura\frmCRUDMAESTRO_ESTADOS_DOCUMENTO.aspx" />
+    <Content Include="eFactura\frmCRUDMAESTRO_Moneda.aspx" />
+    <Content Include="eFactura\frmCRUDMAESTRO_TipoIva.aspx" />
+    <Content Include="eFactura\frmCRUDMAESTRO_Tributo.aspx" />
+    <Content Include="eFactura\frmCRUDPARAMETROS.aspx" />
+    <Content Include="eFactura\frmCRUDPUNTO_VENTA_CONTROL.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Access.png" />
+    <Content Include="Images\bk-stand.png" />
+    <Content Include="Images\bk01.jpg" />
+    <Content Include="Images\blank.jpg" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\callme-heading.png" />
+    <Content Include="Images\callme.png" />
+    <Content Include="Images\document.jpg" />
+    <Content Include="Images\document.png" />
+    <Content Include="Images\donate-now.png" />
+    <Content Include="Images\donate-online.png" />
+    <Content Include="Images\ENFlag.png" />
+    <Content Include="Images\ESFlag.png" />
+    <Content Include="Images\Excel.png" />
+    <Content Include="Images\Flash.png" />
+    <Content Include="Images\flecha.gif" />
+    <Content Include="Images\fondo.png" />
+    <Content Include="Images\fondoLala.png" />
+    <Content Include="Images\ico-datepicker.png" />
+    <Content Include="Images\linea.gif" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\lupa.gif" />
+    <Content Include="Images\Middle.gif" />
+    <Content Include="Images\NoDocument.png" />
+    <Content Include="Images\PDF.png" />
+    <Content Include="Images\PowerPoint.png" />
+    <Content Include="Images\PTFlag.png" />
+    <Content Include="Images\SpanishFlag.png" />
+    <Content Include="Images\sprite.png" />
+    <Content Include="Images\stand01.png" />
+    <Content Include="Images\stand02.png" />
+    <Content Include="Images\taf.png" />
+    <Content Include="Images\tell-a-friend-heading.png" />
+    <Content Include="Images\thankyou.png" />
+    <Content Include="Images\tsr-l.gif" />
+    <Content Include="Images\tsr-r.gif" />
+    <Content Include="Images\visit.jpg" />
+    <Content Include="Scripts\Lib\angular-cookies.min.js" />
+    <Content Include="Scripts\Lib\angular-filter.min.js" />
+    <Content Include="Scripts\Lib\angular-resource.min.js" />
+    <Content Include="Scripts\Lib\angular-route.min.js" />
+    <Content Include="Scripts\Lib\angular-sanitize.min.js" />
+    <Content Include="Scripts\Lib\angular.min.js" />
+    <Content Include="Scripts\Lib\bootstrap.min.js" />
+    <Content Include="Styles.css" />
+    <Content Include="TestAngular.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\frmCRUDsecSTATES.aspx.designer.vb">
+      <DependentUpon>frmCRUDsecSTATES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmCRUDsecSTATES.aspx.vb">
+      <DependentUpon>frmCRUDsecSTATES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmConsultaCUIT.aspx.designer.vb">
+      <DependentUpon>frmConsultaCUIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmConsultaCUIT.aspx.vb">
+      <DependentUpon>frmConsultaCUIT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDDOCUMENTOS.aspx.designer.vb">
+      <DependentUpon>frmCRUDDOCUMENTOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDDOCUMENTOS.aspx.vb">
+      <DependentUpon>frmCRUDDOCUMENTOS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDEMPRESAS.aspx.designer.vb">
+      <DependentUpon>frmCRUDEMPRESAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDEMPRESAS.aspx.vb">
+      <DependentUpon>frmCRUDEMPRESAS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDLOGS.aspx.designer.vb">
+      <DependentUpon>frmCRUDLOGS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDLOGS.aspx.vb">
+      <DependentUpon>frmCRUDLOGS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_CbteTipo.aspx.designer.vb">
+      <DependentUpon>frmCRUDMAESTRO_CbteTipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_CbteTipo.aspx.vb">
+      <DependentUpon>frmCRUDMAESTRO_CbteTipo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_DocTipo.aspx.designer.vb">
+      <DependentUpon>frmCRUDMAESTRO_DocTipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_DocTipo.aspx.vb">
+      <DependentUpon>frmCRUDMAESTRO_DocTipo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_ESTADOS_DOCUMENTO.aspx.designer.vb">
+      <DependentUpon>frmCRUDMAESTRO_ESTADOS_DOCUMENTO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_ESTADOS_DOCUMENTO.aspx.vb">
+      <DependentUpon>frmCRUDMAESTRO_ESTADOS_DOCUMENTO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_Moneda.aspx.designer.vb">
+      <DependentUpon>frmCRUDMAESTRO_Moneda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_Moneda.aspx.vb">
+      <DependentUpon>frmCRUDMAESTRO_Moneda.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_TipoIva.aspx.designer.vb">
+      <DependentUpon>frmCRUDMAESTRO_TipoIva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_TipoIva.aspx.vb">
+      <DependentUpon>frmCRUDMAESTRO_TipoIva.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_Tributo.aspx.designer.vb">
+      <DependentUpon>frmCRUDMAESTRO_Tributo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDMAESTRO_Tributo.aspx.vb">
+      <DependentUpon>frmCRUDMAESTRO_Tributo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDPARAMETROS.aspx.designer.vb">
+      <DependentUpon>frmCRUDPARAMETROS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDPARAMETROS.aspx.vb">
+      <DependentUpon>frmCRUDPARAMETROS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDPUNTO_VENTA_CONTROL.aspx.designer.vb">
+      <DependentUpon>frmCRUDPUNTO_VENTA_CONTROL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eFactura\frmCRUDPUNTO_VENTA_CONTROL.aspx.vb">
+      <DependentUpon>frmCRUDPUNTO_VENTA_CONTROL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TestAngular.aspx.designer.vb">
+      <DependentUpon>TestAngular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestAngular.aspx.vb">
+      <DependentUpon>TestAngular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAPI\AFIPFoxController.vb" />
+    <Compile Include="WebAPI\AFIPServiceController.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\x.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\Lib\angular-resource.min.js.map" />
+    <Content Include="Scripts\Lib\angular-route.min.js.map" />
+    <Content Include="Scripts\Lib\angular-sanitize.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eFactura.BusEntities\eFactura.BusEntities.vbproj">
+      <Project>{8E62808F-A1E1-42C5-83C1-AC44D7C75349}</Project>
+      <Name>eFactura.BusEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eFactura.BusObjects\eFactura.BusObjects.vbproj">
+      <Project>{CD1EE24E-66AC-45F8-93E4-6883636917E7}</Project>
+      <Name>eFactura.BusObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eFactura.Core\eFactura.Core.csproj">
+      <Project>{79E0D658-3D49-4D56-A19F-0E56A3BBA86B}</Project>
+      <Name>eFactura.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

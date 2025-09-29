@@ -1,0 +1,167 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFactura.Core", "eFactura.Core\eFactura.Core.csproj", "{79E0D658-3D49-4D56-A19F-0E56A3BBA86B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ifsaReplicator", "ifsaReplicator\ifsaReplicator.vbproj", "{E313A373-9481-432C-BD95-FA3316C0B067}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eFactura.Web", "eFactura.Web\eFactura.Web.vbproj", "{BBE35646-A58F-41BF-89CA-9643594E5BFE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eFactura.BusEntities", "eFactura.BusEntities\eFactura.BusEntities.vbproj", "{8E62808F-A1E1-42C5-83C1-AC44D7C75349}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eFactura.BusObjects", "eFactura.BusObjects\eFactura.BusObjects.vbproj", "{CD1EE24E-66AC-45F8-93E4-6883636917E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{399E527B-2ACC-4BFC-8EE3-5EECEAD1764E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLLS", "DLLS", "{27ABC20F-9506-4367-A73A-52124FA402CE}"
+	ProjectSection(SolutionItems) = preProject
+		DLLS\AjaxControlToolkit.dll = DLLS\AjaxControlToolkit.dll
+		DLLS\ASF4.BusFacades.dll = DLLS\ASF4.BusFacades.dll
+		DLLS\ASF4.BusObjects.dll = DLLS\ASF4.BusObjects.dll
+		DLLS\ASF4.Dal.dll = DLLS\ASF4.Dal.dll
+		DLLS\ASF4.Tools.dll = DLLS\ASF4.Tools.dll
+		DLLS\ASF4.WebControls.dll = DLLS\ASF4.WebControls.dll
+		DLLS\ASFSec.BusEntities.dll = DLLS\ASFSec.BusEntities.dll
+		DLLS\ASFSec.BusObjects.dll = DLLS\ASFSec.BusObjects.dll
+		DLLS\ASFSec.Web.dll = DLLS\ASFSec.Web.dll
+		DLLS\EntityFramework.dll = DLLS\EntityFramework.dll
+		DLLS\EntityFramework.SqlServer.dll = DLLS\EntityFramework.SqlServer.dll
+		DLLS\GotDotNet.ApplicationBlocks.Data.dll = DLLS\GotDotNet.ApplicationBlocks.Data.dll
+		DLLS\Microsoft.ReportViewer.Common.dll = DLLS\Microsoft.ReportViewer.Common.dll
+		DLLS\Microsoft.ReportViewer.ProcessingObjectModel.dll = DLLS\Microsoft.ReportViewer.ProcessingObjectModel.dll
+		DLLS\Microsoft.ReportViewer.WebForms.dll = DLLS\Microsoft.ReportViewer.WebForms.dll
+		DLLS\Microsoft.ReportViewer.WinForms.dll = DLLS\Microsoft.ReportViewer.WinForms.dll
+		DLLS\Newtonsoft.Json.dll = DLLS\Newtonsoft.Json.dll
+		DLLS\System.Net.Http.dll = DLLS\System.Net.Http.dll
+		DLLS\System.Net.Http.Formatting.dll = DLLS\System.Net.Http.Formatting.dll
+		DLLS\System.Net.Http.WebRequest.dll = DLLS\System.Net.Http.WebRequest.dll
+		DLLS\System.Web.Extensions.dll = DLLS\System.Web.Extensions.dll
+		DLLS\System.Web.Http.dll = DLLS\System.Web.Http.dll
+		DLLS\System.Web.Http.WebHost.dll = DLLS\System.Web.Http.WebHost.dll
+		DLLS\System.Web.Mvc.dll = DLLS\System.Web.Mvc.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VARIOS", "VARIOS", "{352D67DC-E3D9-480C-92C6-73E9E2574DFC}"
+	ProjectSection(SolutionItems) = preProject
+		Apuntes.txt = Apuntes.txt
+		VARIOS\ASF.Dal.zip = VARIOS\ASF.Dal.zip
+		VARIOS\Auxiliar.txt = VARIOS\Auxiliar.txt
+		VARIOS\borrador.sql = VARIOS\borrador.sql
+		VARIOS\Certificado.csr = VARIOS\Certificado.csr
+		VARIOS\Certificado.txt = VARIOS\Certificado.txt
+		VARIOS\Empresas.csv = VARIOS\Empresas.csv
+		VARIOS\Empresas.txt = VARIOS\Empresas.txt
+		ErrorServerRemoto.bmp = ErrorServerRemoto.bmp
+		VARIOS\ifsa2019.pfx = VARIOS\ifsa2019.pfx
+		VARIOS\ifsa_produccion2013.pfx = VARIOS\ifsa_produccion2013.pfx
+		VARIOS\LaSaltenaAFIP-test.pfx = VARIOS\LaSaltenaAFIP-test.pfx
+		VARIOS\PABLOKUGUEL.pfx = VARIOS\PABLOKUGUEL.pfx
+		VARIOS\pedido.csr = VARIOS\pedido.csr
+		VARIOS\privada.key = VARIOS\privada.key
+		VARIOS\servicios.txt = VARIOS\servicios.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SCRIPTS", "SCRIPTS", "{D1E29CCC-327C-46A7-9F36-0C7B18A19DFA}"
+	ProjectSection(SolutionItems) = preProject
+		SCRIPTS\PRUEBAS_script_07_inserts_table_empresas.sql = SCRIPTS\PRUEBAS_script_07_inserts_table_empresas.sql
+		SCRIPTS\PRUEBAS_script_08_inserts_table_maestro_CbteTipo.sql = SCRIPTS\PRUEBAS_script_08_inserts_table_maestro_CbteTipo.sql
+		SCRIPTS\PRUEBAS_script_09_inserts_tables_documentos - documentos_iva.sql = SCRIPTS\PRUEBAS_script_09_inserts_tables_documentos - documentos_iva.sql
+		SCRIPTS\script_01_alter_table_empresas_1.sql = SCRIPTS\script_01_alter_table_empresas_1.sql
+		SCRIPTS\script_01_alter_table_empresas_2.sql = SCRIPTS\script_01_alter_table_empresas_2.sql
+		SCRIPTS\script_02_alter_sp_insert_empresas.sql = SCRIPTS\script_02_alter_sp_insert_empresas.sql
+		SCRIPTS\script_03_alter_sp_update_empresas.sql = SCRIPTS\script_03_alter_sp_update_empresas.sql
+		SCRIPTS\script_04_alter_sp_select_empresas.sql = SCRIPTS\script_04_alter_sp_select_empresas.sql
+		SCRIPTS\script_05_create_sp_get_ticket.sql = SCRIPTS\script_05_create_sp_get_ticket.sql
+		SCRIPTS\script_06_create_sp_set_ticket.sql = SCRIPTS\script_06_create_sp_set_ticket.sql
+		SCRIPTS\script_10_inserts_table_secOptions.sql = SCRIPTS\script_10_inserts_table_secOptions.sql
+		SCRIPTS\script_11_alter_table_Documentos.sql = SCRIPTS\script_11_alter_table_Documentos.sql
+		SCRIPTS\script_12_alter_table_Documentos.sql = SCRIPTS\script_12_alter_table_Documentos.sql
+		SCRIPTS\script_13_alter_sp_insert_documentos.sql = SCRIPTS\script_13_alter_sp_insert_documentos.sql
+		SCRIPTS\script_13_VIEJO_alter_sp_insert_documentos.sql = SCRIPTS\script_13_VIEJO_alter_sp_insert_documentos.sql
+		SCRIPTS\script_14_alter_sp_update_documentos.sql = SCRIPTS\script_14_alter_sp_update_documentos.sql
+		SCRIPTS\script_14_VIEJO_alter_sp_update_documentos.sql = SCRIPTS\script_14_VIEJO_alter_sp_update_documentos.sql
+		SCRIPTS\script_15_inserts_tabla_parametros.sql = SCRIPTS\script_15_inserts_tabla_parametros.sql
+		SCRIPTS\script_16_create_sp_docsfce_get.sql = SCRIPTS\script_16_create_sp_docsfce_get.sql
+		SCRIPTS\script_17_create_sp_documentos_updt2.sql = SCRIPTS\script_17_create_sp_documentos_updt2.sql
+		SCRIPTS\script_18_alter_table_documentos_anulacion.sql = SCRIPTS\script_18_alter_table_documentos_anulacion.sql
+		SCRIPTS\script_19_alter_sp_documentos_ins_anulacion.sql = SCRIPTS\script_19_alter_sp_documentos_ins_anulacion.sql
+		SCRIPTS\script_20_alter_sp_documentos_a_informar_anulacion.sql = SCRIPTS\script_20_alter_sp_documentos_a_informar_anulacion.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DOCS", "DOCS", "{1703C42B-6FF4-4DDF-9399-93D391F61FF5}"
+	ProjectSection(SolutionItems) = preProject
+		DOCS\Especificacion_Tecnica_WSAA_1.2.2.pdf = DOCS\Especificacion_Tecnica_WSAA_1.2.2.pdf
+		DOCS\informacion-electronica-registro.pdf = DOCS\informacion-electronica-registro.pdf
+		DOCS\Listado-RFCE-Mi-PyMe.pdf = DOCS\Listado-RFCE-Mi-PyMe.pdf
+		DOCS\manual_desarrollador_COMPG.pdf = DOCS\manual_desarrollador_COMPG.pdf
+		DOCS\Manual_Desarrollador_WSFECRED_v1.0.3-rc1.pdf = DOCS\Manual_Desarrollador_WSFECRED_v1.0.3-rc1.pdf
+		DOCS\RG-Notas-debito-y-credito.pdf = DOCS\RG-Notas-debito-y-credito.pdf
+		DOCS\viejo_manual_desarrollador_COMPG_v1_1.pdf = DOCS\viejo_manual_desarrollador_COMPG_v1_1.pdf
+		DOCS\WebServiceFeCred.pdf = DOCS\WebServiceFeCred.pdf
+		DOCS\WSBFEV1-ManualParaElDesarrollador-V2-3.pdf = DOCS\WSBFEV1-ManualParaElDesarrollador-V2-3.pdf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://marceloabosch.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = eFactura.BusEntities\\eFactura.BusEntities.vbproj
+		SccProjectName1 = eFactura.BusEntities
+		SccLocalPath1 = eFactura.BusEntities
+		SccProjectUniqueName2 = eFactura.BusObjects\\eFactura.BusObjects.vbproj
+		SccProjectName2 = eFactura.BusObjects
+		SccLocalPath2 = eFactura.BusObjects
+		SccProjectUniqueName3 = eFactura.Core\\eFactura.Core.csproj
+		SccProjectName3 = eFactura.Core
+		SccLocalPath3 = eFactura.Core
+		SccProjectUniqueName4 = eFactura.Web\\eFactura.Web.vbproj
+		SccProjectName4 = eFactura.Web
+		SccLocalPath4 = eFactura.Web
+		SccProjectUniqueName5 = ifsaReplicator\\ifsaReplicator.vbproj
+		SccProjectName5 = ifsaReplicator
+		SccLocalPath5 = ifsaReplicator
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79E0D658-3D49-4D56-A19F-0E56A3BBA86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E0D658-3D49-4D56-A19F-0E56A3BBA86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E0D658-3D49-4D56-A19F-0E56A3BBA86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E0D658-3D49-4D56-A19F-0E56A3BBA86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E313A373-9481-432C-BD95-FA3316C0B067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E313A373-9481-432C-BD95-FA3316C0B067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E313A373-9481-432C-BD95-FA3316C0B067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E313A373-9481-432C-BD95-FA3316C0B067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE35646-A58F-41BF-89CA-9643594E5BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE35646-A58F-41BF-89CA-9643594E5BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE35646-A58F-41BF-89CA-9643594E5BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE35646-A58F-41BF-89CA-9643594E5BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E62808F-A1E1-42C5-83C1-AC44D7C75349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E62808F-A1E1-42C5-83C1-AC44D7C75349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E62808F-A1E1-42C5-83C1-AC44D7C75349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E62808F-A1E1-42C5-83C1-AC44D7C75349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1EE24E-66AC-45F8-93E4-6883636917E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1EE24E-66AC-45F8-93E4-6883636917E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1EE24E-66AC-45F8-93E4-6883636917E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1EE24E-66AC-45F8-93E4-6883636917E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27ABC20F-9506-4367-A73A-52124FA402CE} = {399E527B-2ACC-4BFC-8EE3-5EECEAD1764E}
+		{352D67DC-E3D9-480C-92C6-73E9E2574DFC} = {399E527B-2ACC-4BFC-8EE3-5EECEAD1764E}
+		{D1E29CCC-327C-46A7-9F36-0C7B18A19DFA} = {399E527B-2ACC-4BFC-8EE3-5EECEAD1764E}
+		{1703C42B-6FF4-4DDF-9399-93D391F61FF5} = {399E527B-2ACC-4BFC-8EE3-5EECEAD1764E}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

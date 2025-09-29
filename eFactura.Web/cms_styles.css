@@ -1,0 +1,794 @@
+/* Versioningto
+NERD CMS
+CMS Version 2.0.0
+Release 2010.06.05
+CSS Version 1.0.0
+Release 2010.06.05
+Copyright 2010 Nerd Interactive Thiking
+*/
+body {
+    /*
+	background-color:#f5f5f5;
+	background-image:url(../../../themes/default/backgrounds/bk-body.gif);
+        */
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	color: #666666;
+}
+
+.CMS {
+	margin:15px;
+	min-width:980px;
+}
+
+
+/*Header*/
+.header {
+	height:80px;
+	margin-bottom:10px;
+	clear:both;
+}
+.header .logo {
+	width:50%;
+	height:80px;
+	float:left;
+	background-image:url(../../../themes/default/logo/logos.jpg);
+	background-repeat:no-repeat;
+}
+.header .utility_options {
+	width:50%;
+	width:auto;
+	float:right;
+}
+/*Application Options*/
+.header .application_options {
+	width:auto;
+	float:left;
+	margin-right:20px;
+}
+.header .application_label {
+	font-size:1em;
+}
+.header .application_select {
+}
+.header .application_select .ApplicationCombo {
+	font-size:1em;
+}
+/*End Application Options*/
+/*Application Options*/
+.header .language_options {
+	width:auto;
+	float:left;
+	margin-right:20px;
+}
+.header .language_label {
+	font-size:1em;
+}
+.header .language_select {
+}
+.header .language_select .LanguageCombo {
+	font-size:1em;
+}
+/*End Application Options*/
+/*User Information*/
+.header .user_information {
+	width:auto;
+	float:left;
+}
+.header .user_welcome {
+	font-size:1em;
+	font-weight:bold;
+}
+.header .user_options {
+	font-size:1em;
+}
+.header .user_options a {
+	font-size:1em;
+	text-decoration:none;
+	color:#666666;
+}
+.header .user_options a:hover {
+	font-size:1em;
+	text-decoration:underline;
+	color:#666666;
+}
+.header .user_options .Separator {
+	margin-right:5px;
+}
+.header .user_options .ChangePassword {
+	margin-right:5px;
+}
+.header .user_options .Help {
+	margin-right:5px;
+}
+.header .user_options .LogOut {
+	margin-right:5px;
+}
+/*End User Information*/
+.clear {
+	width:100%;
+	clear:both;
+}
+/*Global Navigation*/
+.content_wrapper {	
+	height:auto;
+}
+.global_navigation {
+	width:100%;
+	height:auto;
+	float:right;
+	border-bottom:solid 1px #CCCCCC;
+}
+.main_menu {
+	font-size:1em;
+	margin-right:20px;
+	float:right;
+	padding-bottom:6px;
+}
+.main_menu ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.main_menu li {
+	list-style-type:none;
+	float:left;
+	text-transform:uppercase;
+}
+
+.main_menu .MenuButton {
+	padding: 8px 10px 6px 10px;
+	margin-right:10px;
+}
+.main_menu .MenuButtonSelected {
+	padding:8px 20px 6px 20px;
+	margin-right:10px;
+	font-weight:bolder;
+	background-color:rgb(242, 242, 242);
+	border:solid 1px #CCCCCC;
+	border-bottom:#FFFFFF;
+	position:relative;
+	top:1px;
+}
+.main_menu a {
+	text-decoration:none;
+	color:#666666;
+}
+.main_menu a:hover {
+	text-decoration:underline;
+	color:#666666;
+}
+/*Content Area*/
+.content_area {	
+	width:100%;
+	min-height:500px;
+	background-color:#FFFFFF;
+	border:solid 1px #CCCCCC;
+	border-top:#FFFFFF;
+	margin-bottom:20px;
+	height:auto;
+	float:left;
+	padding-top:0px;
+	padding-bottom:15px;
+}
+/*Side Navigation*/
+.side_navigation {
+	height:auto;
+	
+	
+    
+}
+.secondary_menu ul {
+	list-style-type:none;
+    display: block;
+	padding:0;
+	margin:0;
+    height:40px;
+    background-color:navy;
+    margin-bottom:10px;
+    
+    
+
+}
+.secondary_menu li {
+	list-style-type:none;
+    display: inline;
+	padding:10px;
+    float:left;
+    font-size:14px;
+}
+.secondary_menu .OptionButton {
+}
+.secondary_menu .OptionButtonSelected {
+    text-decoration:underline;
+}
+.secondary_menu .OptionButtonActive {
+	font-weight:bolder;
+    text-decoration:underline;
+    color:#ffffff;
+	
+}
+.secondary_menu a {
+	text-decoration:none;
+	color:#ffffff;
+}
+.secondary_menu a:hover {
+	text-decoration:underline;
+	color:#ffffff;
+}
+.action_area {
+	
+	min-height:500px;
+	height:100%;
+	/* width:83%;F*/
+	/*border-left:solid 1px #cccccc;*/
+	padding-left:20px;
+	padding-right:15px;
+}
+/*Toolbar*/
+.ToolBar {
+	height:auto;
+}
+.ToolBar#objCRUDToolBarHeader  {
+	margin-top:10px;
+	height:auto;
+}
+.ToolbarContainer {
+	width:100%;
+	height:30px;
+	clear:both;
+}
+.ToolBar .ToolbarTitle {
+	font-size:1.5em;
+	color:#38aad0;
+	width:auto;
+	float:left;
+}
+.ToolbarButtonsBar {
+	float:right;
+	width:auto;
+}
+
+/*Botones*/
+
+
+a.ToolbarButton {
+	float:left;
+	margin-left:5px;
+	cursor:pointer;
+	display:block;
+	border:solid 1px #CCCCCC;
+	background-color:#F9FFCC;
+	min-width:80px;
+	text-align:center;
+	text-decoration:none;
+	color:#004B5D;
+	font-weight:bold;
+	height:19px;
+	padding-top:3px;
+	padding-left:2px;
+	padding-right:2px;
+	
+}
+
+a.ToolbarButton:hover {
+	
+	float:left;
+	margin-left:5px;
+	cursor:pointer;
+	display:block;
+	border:solid 1px #CCCCCC;
+	background-color:#F9FFCC;
+	min-width:80px;
+	text-align:center;
+	text-decoration:underline;
+	color:#004B5D;
+	font-weight:bold;
+	height:19px;
+	padding-top:3px;
+}
+
+a.ToolbarButtonDisabled{
+	
+	float:left;
+	margin-left:5px;
+	display:block;
+	border:solid 1px #CCCCCC;
+	background-color:#F9FFCC;
+	min-width:80px;
+	height:19px;
+	padding-top:3px;
+	text-align:center;
+	text-decoration:none;
+	color:#CCCCCC;
+	font-style:italic;
+	
+
+		
+}	
+
+
+/*Search*/
+.PanelSearch {
+	margin-top:10px;
+}
+.PanelSearchForm {
+	padding:10px;
+	background-color:#f2f2f2;
+	font-size:1em;
+	margin-bottom:10px;
+}
+.PanelSearchForm td {
+	padding-bottom:2px;
+}
+.PanelSearchForm input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+.PanelSearchForm select {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+
+/*Results*/
+
+.PanelSearchResults {
+	padding:10px;
+	background-color:#f2f2f2;
+	font-size:0.912em;
+	height:auto;
+}
+.PanelSearchResultsTitle {
+	height:25px;
+}
+.PanelResultsGrid {
+	height:auto;
+}
+.DataGrid {
+	width:98%;
+	height:20px;
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+}
+.DataGrid .DataGridItem {
+	background-color:#FFFFFF;
+	cursor:hand;
+}
+.DataGrid .DataGridAlternatingItem {
+	background-color:#FAFAFA;
+	cursor:hand;
+}
+
+
+.DataGridItem a:link, .DataGridItem a:active, .DataGridItem a:visited, .DataGridItem a:hover 
+{
+	color:#666666;	
+	text-decoration:none;
+	
+}
+
+.DataGridAlternatingItem a:link, .DataGridAlternatingItem a:active, .DataGridAlternatingItem a:visited, .DataGridAlternatingItem a:hover 
+{
+	
+	color:#666666;	
+	text-decoration:none;
+	
+}
+
+.DataGridSelectedItem
+{
+	background-color:#FFFFD6;
+	color:#666666;	
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.DataGridSelectedItem a:link, .DataGridSelectedItem a:active, .DataGridSelectedItem a:visited, .DataGridSelectedItem a:hover 
+{
+	color:#666666;	
+	text-decoration:none;
+	
+}
+
+
+
+.DataGrid td {
+	border:solid 1px #999999;
+	padding:5px;
+}
+.DataGrid .DataGridHeader {
+	background-color:#999999;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+
+
+.dgrList_DIV {
+	
+	min-height:60px;
+	max-height:160px;
+
+	
+}
+
+/*Content*/
+/*Search*/
+.PanelControls {
+	margin-top:15px;
+	height:auto;
+    background-color:#f2f2f2;
+    padding:10px;
+}
+.PanelContentTitle {
+margin-top:10px;
+}
+.PanelContentTitle_Add {
+	background-image:url(../../../themes/default/icons/ico-content-add.png);
+	background-repeat:no-repeat;
+	height:25px;
+	padding-top:7px;
+	padding-left:32px;
+	border-bottom:#CCCCCC 1px solid;
+	margin-bottom:10px;
+}
+.PanelContentTitle_Edit {
+	background-image:url(../../../themes/default/icons/ico-content-edit.png);
+	background-repeat:no-repeat;
+	height:25px;
+	padding-top:7px;
+	padding-left:32px;
+	border-bottom:#CCCCCC 1px solid;
+	margin-bottom:10px;
+}
+.PanelContentTitle_Delete {
+	background-image:url(../../../themes/default/icons/ico-content-delete.png);
+	background-repeat:no-repeat;
+	height:25px;
+	padding-top:7px;
+	padding-left:32px;
+	border-bottom:#CCCCCC 1px solid;
+	margin-bottom:10px;
+}
+.PanelContentTitle_Search {
+	background-image:url(../../../themes/default/icons/ico-search.png);
+	background-repeat:no-repeat;
+	height:25px;
+	padding-top:7px;
+	padding-left:32px;
+	border-bottom:#CCCCCC 1px solid;
+	margin-bottom:10px;
+}
+
+
+	
+
+.PanelContentForm {
+	font-size:1em;
+	margin-bottom:10px;
+}
+.PanelContentForm td {
+	padding-bottom:2px;
+}
+.PanelContentForm input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+.PanelContentForm select {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+.PanelContentForm .ContentTitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.167em;
+	font-weight:bold;
+	color:#38aad0;
+	margin-bottom:10px;
+}
+
+/*Tab*/
+.PanelContentTabOptions {
+	/*background-color:#f2f2f2;*/
+	font-size:1em;
+	margin-bottom:10px;
+}
+.tab_navigation {
+	height:auto;
+}
+.tab_navigation .TabbedPanelsTabGroup {
+}
+.tab_navigation ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	height:30px;
+}
+.tab_navigation li {
+	list-style-type:none;
+	float:left;
+}
+
+.tab_navigation .TabbedPanelsTab {
+	padding:8px 10px 6px 10px;
+	margin-right:10px;
+}
+.tab_navigation .TabbedPanelsTabSelected {
+	padding:8px 20px 6px 20px;
+	margin-right:10px;
+	font-weight:bolder;
+	background-color:#f2f2f2;
+	border-bottom:#FFFFFF;
+	position:relative;
+	top:1px;
+}
+.tab_navigation a {
+	text-decoration:none;
+	color:#666666;
+}
+.tab_navigation a:hover {
+	text-decoration:underline;
+	color:#666666;
+}
+/*Tabla*/
+#tblControls {
+	width:100%;
+	margin-bottom:10px;
+ border-collapse:collapse;
+}
+
+#tblControls td 
+{
+       border-collapse:collapse;
+}
+
+.TabbedPanelsContentGroup {
+	background-color:#f2f2f2;
+	padding:20px;	
+}
+
+.ComboBox
+{ 
+  font-size:11px;
+  color: #324452;
+  border-color: #CCCCCC;
+  border-width:1px;
+  border-style:solid;
+}
+.TextBox
+{
+  font-size:11px;
+  border-color:#CCCCCC;
+  border-width:1px;
+  border-style:solid;
+  color: #324452;
+  width:800px;
+  font-family:Arial, Helvetica, sans-serif;
+  height:16px;
+  padding-left:2px;
+  padding-right:2px;
+  
+}
+
+textarea.TextBox
+{
+    height:60px;
+} 
+select.TextBox
+{ 
+     padding-right:0px;
+    height:20px;
+}
+
+.InputFile
+{
+  font-size:11px;
+  border-color: #7F9DB9;
+  border-width:1px;
+  border-style:solid;
+  padding-left:1px;
+  color: #324452;
+  width:220px;
+}
+.Label
+{
+  font-size:11px;
+  color: #324452;
+}
+
+.LabelBold
+{
+  font-size:11px;
+  color: #324452;
+  font-weight:bold;
+  
+}
+.LabelMediumBold
+{
+  font-size:13px;
+  color: #324452;
+  font-weight:bold;
+  
+}
+
+
+.TabbedPanelsContent
+{
+	background-color:#F0F0F0;
+}
+
+/* START HOME TABBED CONTENT */
+ .TabbedPanels 
+{
+	text-align:left;
+	margin: 0px;    
+	padding: 0px;
+	float: left;
+	clear: none;
+	width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+	margin-top:20px;
+}
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+}
+.TabbedPanelsTab {
+	height:auto;
+	float: left;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin: 0px 1px 0px 0px;
+	font-size:11px;
+	font-weight:bold;
+	color: #324452;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+background-color: #FFFFFF;
+	border-left:solid;
+	border-left-color:#FFFFFF;
+	border-left-width:1px;
+	
+}
+.TabbedPanelsTabHover {
+	color:#333333;
+	
+}
+.TabbedPanelsTabSelected {
+	border-left: solid 1px #CFCFCF;
+	border-top: solid 1px #CFCFCF;
+	border-right: solid 1px #CFCFCF;
+	border-bottom: solid 1px #F0F0F0;
+	background-color: #F0F0F0;
+}
+.TabbedPanelsTab a {
+	color: #729F9A;
+	text-decoration: none;
+}
+.TabbedPanelsContentGroup {
+	clear: both;
+	border-left: solid 1px #CFCFCF;
+	border-bottom: solid 1px #CFCFCF;
+	border-top: solid 1px #CFCFCF;
+	border-right: solid 1px #CFCFCF;
+	background-color: #F0F0F0;
+	height:auto;
+	/*width:938px;*/
+	padding:5px;
+}
+/*AutoComplete flyout */
+
+.autocomplete_completionListElement 
+{  
+	margin : 0px;
+	margin-top:16px;
+	padding-left:0px;
+	background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 200px;
+	
+    text-align : left; 
+    list-style-type :square;
+    font-family:Arial;
+    font-size:11px;
+}
+
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem
+{
+    margin : 0px;
+	
+	background-color: #ffff99;
+	color: black;
+	padding: 1px;
+	font-family:Arial;
+    font-size:11px;
+}
+
+/* AutoComplete item */
+
+.autocomplete_listItem 
+{
+    margin : 0px;
+	
+	background-color : window;
+	color : windowtext;
+	padding : 1px;
+	font-family:Arial;
+    font-size:11px;
+}
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px solid #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
