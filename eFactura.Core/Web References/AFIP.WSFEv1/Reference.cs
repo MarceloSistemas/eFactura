@@ -69,9 +69,13 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         
         private System.Threading.SendOrPostCallback FEParamGetTiposCbteOperationCompleted;
         
+        private System.Threading.SendOrPostCallback FEParamGetCondicionIvaReceptorOperationCompleted;
+        
         private System.Threading.SendOrPostCallback FEParamGetTiposDocOperationCompleted;
         
         private System.Threading.SendOrPostCallback FEParamGetTiposPaisesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback FEParamGetActividadesOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -166,10 +170,16 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         public event FEParamGetTiposCbteCompletedEventHandler FEParamGetTiposCbteCompleted;
         
         /// <remarks/>
+        public event FEParamGetCondicionIvaReceptorCompletedEventHandler FEParamGetCondicionIvaReceptorCompleted;
+        
+        /// <remarks/>
         public event FEParamGetTiposDocCompletedEventHandler FEParamGetTiposDocCompleted;
         
         /// <remarks/>
         public event FEParamGetTiposPaisesCompletedEventHandler FEParamGetTiposPaisesCompleted;
+        
+        /// <remarks/>
+        public event FEParamGetActividadesCompletedEventHandler FEParamGetActividadesCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://ar.gov.afip.dif.FEV1/FECAESolicitar", RequestNamespace="http://ar.gov.afip.dif.FEV1/", ResponseNamespace="http://ar.gov.afip.dif.FEV1/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -487,26 +497,28 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://ar.gov.afip.dif.FEV1/FEParamGetCotizacion", RequestNamespace="http://ar.gov.afip.dif.FEV1/", ResponseNamespace="http://ar.gov.afip.dif.FEV1/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public FECotizacionResponse FEParamGetCotizacion(FEAuthRequest Auth, string MonId) {
+        public FECotizacionResponse FEParamGetCotizacion(FEAuthRequest Auth, string MonId, string FchCotiz) {
             object[] results = this.Invoke("FEParamGetCotizacion", new object[] {
                         Auth,
-                        MonId});
+                        MonId,
+                        FchCotiz});
             return ((FECotizacionResponse)(results[0]));
         }
         
         /// <remarks/>
-        public void FEParamGetCotizacionAsync(FEAuthRequest Auth, string MonId) {
-            this.FEParamGetCotizacionAsync(Auth, MonId, null);
+        public void FEParamGetCotizacionAsync(FEAuthRequest Auth, string MonId, string FchCotiz) {
+            this.FEParamGetCotizacionAsync(Auth, MonId, FchCotiz, null);
         }
         
         /// <remarks/>
-        public void FEParamGetCotizacionAsync(FEAuthRequest Auth, string MonId, object userState) {
+        public void FEParamGetCotizacionAsync(FEAuthRequest Auth, string MonId, string FchCotiz, object userState) {
             if ((this.FEParamGetCotizacionOperationCompleted == null)) {
                 this.FEParamGetCotizacionOperationCompleted = new System.Threading.SendOrPostCallback(this.OnFEParamGetCotizacionOperationCompleted);
             }
             this.InvokeAsync("FEParamGetCotizacion", new object[] {
                         Auth,
-                        MonId}, this.FEParamGetCotizacionOperationCompleted, userState);
+                        MonId,
+                        FchCotiz}, this.FEParamGetCotizacionOperationCompleted, userState);
         }
         
         private void OnFEParamGetCotizacionOperationCompleted(object arg) {
@@ -720,6 +732,37 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://ar.gov.afip.dif.FEV1/FEParamGetCondicionIvaReceptor", RequestNamespace="http://ar.gov.afip.dif.FEV1/", ResponseNamespace="http://ar.gov.afip.dif.FEV1/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public CondicionIvaReceptorResponse FEParamGetCondicionIvaReceptor(FEAuthRequest Auth, string ClaseCmp) {
+            object[] results = this.Invoke("FEParamGetCondicionIvaReceptor", new object[] {
+                        Auth,
+                        ClaseCmp});
+            return ((CondicionIvaReceptorResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void FEParamGetCondicionIvaReceptorAsync(FEAuthRequest Auth, string ClaseCmp) {
+            this.FEParamGetCondicionIvaReceptorAsync(Auth, ClaseCmp, null);
+        }
+        
+        /// <remarks/>
+        public void FEParamGetCondicionIvaReceptorAsync(FEAuthRequest Auth, string ClaseCmp, object userState) {
+            if ((this.FEParamGetCondicionIvaReceptorOperationCompleted == null)) {
+                this.FEParamGetCondicionIvaReceptorOperationCompleted = new System.Threading.SendOrPostCallback(this.OnFEParamGetCondicionIvaReceptorOperationCompleted);
+            }
+            this.InvokeAsync("FEParamGetCondicionIvaReceptor", new object[] {
+                        Auth,
+                        ClaseCmp}, this.FEParamGetCondicionIvaReceptorOperationCompleted, userState);
+        }
+        
+        private void OnFEParamGetCondicionIvaReceptorOperationCompleted(object arg) {
+            if ((this.FEParamGetCondicionIvaReceptorCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.FEParamGetCondicionIvaReceptorCompleted(this, new FEParamGetCondicionIvaReceptorCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://ar.gov.afip.dif.FEV1/FEParamGetTiposDoc", RequestNamespace="http://ar.gov.afip.dif.FEV1/", ResponseNamespace="http://ar.gov.afip.dif.FEV1/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public DocTipoResponse FEParamGetTiposDoc(FEAuthRequest Auth) {
             object[] results = this.Invoke("FEParamGetTiposDoc", new object[] {
@@ -774,6 +817,35 @@ namespace eFactura.Core.AFIP.WSFEv1 {
             if ((this.FEParamGetTiposPaisesCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.FEParamGetTiposPaisesCompleted(this, new FEParamGetTiposPaisesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://ar.gov.afip.dif.FEV1/FEParamGetActividades", RequestNamespace="http://ar.gov.afip.dif.FEV1/", ResponseNamespace="http://ar.gov.afip.dif.FEV1/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public FEActividadesResponse FEParamGetActividades(FEAuthRequest Auth) {
+            object[] results = this.Invoke("FEParamGetActividades", new object[] {
+                        Auth});
+            return ((FEActividadesResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void FEParamGetActividadesAsync(FEAuthRequest Auth) {
+            this.FEParamGetActividadesAsync(Auth, null);
+        }
+        
+        /// <remarks/>
+        public void FEParamGetActividadesAsync(FEAuthRequest Auth, object userState) {
+            if ((this.FEParamGetActividadesOperationCompleted == null)) {
+                this.FEParamGetActividadesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnFEParamGetActividadesOperationCompleted);
+            }
+            this.InvokeAsync("FEParamGetActividades", new object[] {
+                        Auth}, this.FEParamGetActividadesOperationCompleted, userState);
+        }
+        
+        private void OnFEParamGetActividadesOperationCompleted(object arg) {
+            if ((this.FEParamGetActividadesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.FEParamGetActividadesCompleted(this, new FEParamGetActividadesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -847,19 +919,31 @@ namespace eFactura.Core.AFIP.WSFEv1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
-    public partial class PaisTipo {
+    public partial class ActividadesTipo {
         
-        private short idField;
+        private long idField;
+        
+        private short ordenField;
         
         private string descField;
         
         /// <remarks/>
-        public short Id {
+        public long Id {
             get {
                 return this.idField;
             }
             set {
                 this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public short Orden {
+            get {
+                return this.ordenField;
+            }
+            set {
+                this.ordenField = value;
             }
         }
         
@@ -880,16 +964,16 @@ namespace eFactura.Core.AFIP.WSFEv1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
-    public partial class FEPaisResponse {
+    public partial class FEActividadesResponse {
         
-        private PaisTipo[] resultGetField;
+        private ActividadesTipo[] resultGetField;
         
         private Err[] errorsField;
         
         private Evt[] eventsField;
         
         /// <remarks/>
-        public PaisTipo[] ResultGet {
+        public ActividadesTipo[] ResultGet {
             get {
                 return this.resultGetField;
             }
@@ -991,6 +1075,84 @@ namespace eFactura.Core.AFIP.WSFEv1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
+    public partial class PaisTipo {
+        
+        private short idField;
+        
+        private string descField;
+        
+        /// <remarks/>
+        public short Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
+    public partial class FEPaisResponse {
+        
+        private PaisTipo[] resultGetField;
+        
+        private Err[] errorsField;
+        
+        private Evt[] eventsField;
+        
+        /// <remarks/>
+        public PaisTipo[] ResultGet {
+            get {
+                return this.resultGetField;
+            }
+            set {
+                this.resultGetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Err[] Errors {
+            get {
+                return this.errorsField;
+            }
+            set {
+                this.errorsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Evt[] Events {
+            get {
+                return this.eventsField;
+            }
+            set {
+                this.eventsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
     public partial class DocTipo {
         
         private int idField;
@@ -1058,6 +1220,96 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         
         /// <remarks/>
         public DocTipo[] ResultGet {
+            get {
+                return this.resultGetField;
+            }
+            set {
+                this.resultGetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Err[] Errors {
+            get {
+                return this.errorsField;
+            }
+            set {
+                this.errorsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Evt[] Events {
+            get {
+                return this.eventsField;
+            }
+            set {
+                this.eventsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
+    public partial class CondicionIvaReceptor {
+        
+        private int idField;
+        
+        private string descField;
+        
+        private string cmp_ClaseField;
+        
+        /// <remarks/>
+        public int Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Cmp_Clase {
+            get {
+                return this.cmp_ClaseField;
+            }
+            set {
+                this.cmp_ClaseField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
+    public partial class CondicionIvaReceptorResponse {
+        
+        private CondicionIvaReceptor[] resultGetField;
+        
+        private Err[] errorsField;
+        
+        private Evt[] eventsField;
+        
+        /// <remarks/>
+        public CondicionIvaReceptor[] ResultGet {
             get {
                 return this.resultGetField;
             }
@@ -1811,7 +2063,7 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         
         private string monIdField;
         
-        private double monCotizField;
+        public double monCotizField;
         
         private string fchCotizField;
         
@@ -2715,7 +2967,15 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         
         private string monIdField;
         
-        private double monCotizField;
+        public double monCotizField;
+        
+        private bool monCotizFieldSpecified;
+        
+        private string canMisMonExtField;
+        
+        private int condicionIVAReceptorIdField;
+        
+        private bool condicionIVAReceptorIdFieldSpecified;
         
         private CbteAsoc[] cbtesAsocField;
         
@@ -2726,6 +2986,10 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         private Opcional[] opcionalesField;
         
         private Comprador[] compradoresField;
+        
+        private Periodo periodoAsocField;
+        
+        private Actividad[] actividadesField;
         
         /// <remarks/>
         public int Concepto {
@@ -2898,6 +3162,48 @@ namespace eFactura.Core.AFIP.WSFEv1 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MonCotizSpecified {
+            get {
+                return this.monCotizFieldSpecified;
+            }
+            set {
+                this.monCotizFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CanMisMonExt {
+            get {
+                return this.canMisMonExtField;
+            }
+            set {
+                this.canMisMonExtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CondicionIVAReceptorId {
+            get {
+                return this.condicionIVAReceptorIdField;
+            }
+            set {
+                this.condicionIVAReceptorIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CondicionIVAReceptorIdSpecified {
+            get {
+                return this.condicionIVAReceptorIdFieldSpecified;
+            }
+            set {
+                this.condicionIVAReceptorIdFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public CbteAsoc[] CbtesAsoc {
             get {
                 return this.cbtesAsocField;
@@ -2944,6 +3250,26 @@ namespace eFactura.Core.AFIP.WSFEv1 {
             }
             set {
                 this.compradoresField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Periodo PeriodoAsoc {
+            get {
+                return this.periodoAsocField;
+            }
+            set {
+                this.periodoAsocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Actividad[] Actividades {
+            get {
+                return this.actividadesField;
+            }
+            set {
+                this.actividadesField = value;
             }
         }
     }
@@ -3205,6 +3531,60 @@ namespace eFactura.Core.AFIP.WSFEv1 {
             }
             set {
                 this.porcentajeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
+    public partial class Periodo {
+        
+        private string fchDesdeField;
+        
+        private string fchHastaField;
+        
+        /// <remarks/>
+        public string FchDesde {
+            get {
+                return this.fchDesdeField;
+            }
+            set {
+                this.fchDesdeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FchHasta {
+            get {
+                return this.fchHastaField;
+            }
+            set {
+                this.fchHastaField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ar.gov.afip.dif.FEV1/")]
+    public partial class Actividad {
+        
+        private long idField;
+        
+        /// <remarks/>
+        public long Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
             }
         }
     }
@@ -4133,6 +4513,32 @@ namespace eFactura.Core.AFIP.WSFEv1 {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void FEParamGetCondicionIvaReceptorCompletedEventHandler(object sender, FEParamGetCondicionIvaReceptorCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class FEParamGetCondicionIvaReceptorCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal FEParamGetCondicionIvaReceptorCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public CondicionIvaReceptorResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CondicionIvaReceptorResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void FEParamGetTiposDocCompletedEventHandler(object sender, FEParamGetTiposDocCompletedEventArgs e);
     
     /// <remarks/>
@@ -4179,6 +4585,32 @@ namespace eFactura.Core.AFIP.WSFEv1 {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((FEPaisResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void FEParamGetActividadesCompletedEventHandler(object sender, FEParamGetActividadesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class FEParamGetActividadesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal FEParamGetActividadesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public FEActividadesResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((FEActividadesResponse)(this.results[0]));
             }
         }
     }

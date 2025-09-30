@@ -45,12 +45,12 @@ Module Module1
             '----------------------------------------------
             Dim DOCUMENTO_ID As String = ""
 
-            Dim query As String = "select top 100 cbteTipo, PtoVta,CbteNro, Concepto,DocTipo, DocNro, CbteFech as CbteFch ,bjag/100 as ImpTotal, " & _
-                "cast(cast((bjag/100) / (1 + (IVTXR1/100)) as decimal(13,2)) as float) as impNeto, " & _
-                "BJCRCD as MonID, MonCotiz, Estado, cast(IVTXR2 as integer) as TipoIva, IVTXR1 as AlicuotaIva, " & _
-                "cbtefchvto as cbteFchVto, cbu,  aliascbu  as aliasCbu, " & _
-                "rcbtetipo as rCbteTipo, rptovta as rPtoVta, rcbtenro as rCbteNro, rcbtefech as rCbteFech, anulacion " & _
-                "from proddta.f56BEJFEL inner  join proddta.f4201 on BJDOCO = SHDOCO and BJDCTO = SHDCTO " & _
+            Dim query As String = "select top 100 cbteTipo, PtoVta,CbteNro, Concepto,DocTipo, DocNro, CbteFech as CbteFch ,bjag/100 as ImpTotal, " &
+                "cast(cast((bjag/100) / (1 + (IVTXR1/100)) as decimal(13,2)) as float) as impNeto, " &
+                "BJCRCD as MonID, MonCotiz, Estado, cast(IVTXR2 as integer) as TipoIva, IVTXR1 as AlicuotaIva, " &
+                "cbtefchvto as cbteFchVto, cbu,  aliascbu  as aliasCbu, " &
+                "rcbtetipo as rCbteTipo, rptovta as rPtoVta, rcbtenro as rCbteNro, rcbtefech as rCbteFech, anulacion, ISNULL(Condiva,'1') as Condiva " &
+                "from proddta.f56BEJFEL inner  join proddta.f4201 on BJDOCO = SHDOCO and BJDCTO = SHDCTO " &
                 "inner  join proddta.f560002 on SHTXA1 = IVTXA1 where TIPO='A' and ESTADO in('N','A','C')"
 
             'objDalJDE.FillDataSet(CommandType.Text, "select cbteTipo, PtoVta,CbteNro, Concepto,DocTipo, DocNro, CbteFech as CbteFch ,bjag/100 as ImpTotal, cast(cast((bjag/100) / 1.21 as decimal(13,2)) as float) as impNeto, BJCRCD as MonID, MonCotiz, Estado from proddta.f56BEJFEL where TIPO='A' and ESTADO in('N','A','C') ", dstDocumentosIfsa)
@@ -115,6 +115,7 @@ Module Module1
                 dtrDocumentoHeader.FchServHasta = ""
                 dtrDocumentoHeader.FchVtoPago = ""
                 dtrDocumentoHeader.FECHA_ALTA = System.DateTime.Now
+                dtrDocumentoHeader.Condiva = dtrDocumentoIFSA.Condiva
 
                 ' PK 03/09/2019 - agrego  campos para FCE solo para los mayores de 200
                 'If (dtrDocumentoIFSA.cbteTipo > 200) Then

@@ -76,7 +76,6 @@
     <Compile Include="Cbte.cs" />
     <Compile Include="DocumentoRecord.cs">
       <DependentUpon>DocumentoRecord.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DocumentoRecord.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -289,10 +288,16 @@
     <None Include="Web References\AFIP.WSFEv1\ConceptoTipoResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\AFIP.WSFEv1\CondicionIvaReceptorResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\AFIP.WSFEv1\DocTipoResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\AFIP.WSFEv1\DummyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AFIP.WSFEv1\FEActividadesResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\AFIP.WSFEv1\FECAEAGetResponse.datasource">

@@ -336,7 +336,9 @@ Partial Public Class DOCUMENTOSRecord
         
         Private columnCAEFchVto As Global.System.Data.DataColumn
         
-        Private column_Error As Global.System.Data.DataColumn
+        Private columnError As Global.System.Data.DataColumn
+        
+        Private columnCondiva As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
@@ -591,9 +593,17 @@ Partial Public Class DOCUMENTOSRecord
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
-        Public ReadOnly Property _ErrorColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property ErrorColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.column_Error
+                Return Me.columnError
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public ReadOnly Property CondivaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCondiva
             End Get
         End Property
         
@@ -662,9 +672,10 @@ Partial Public Class DOCUMENTOSRecord
                     ByVal ERP_NOMBRE_ARCHIVO As String,  _
                     ByVal CAE As String,  _
                     ByVal CAEFchVto As String,  _
-                    ByVal _Error As String) As DOCUMENTOSRow
+                    ByVal _Error As String,  _
+                    ByVal Condiva As String) As DOCUMENTOSRow
             Dim rowDOCUMENTOSRow As DOCUMENTOSRow = CType(Me.NewRow,DOCUMENTOSRow)
-            Dim columnValuesArray() As Object = New Object() {DOCUMENTO_ID, EMPRESA_ID, CbteTipo, PtoVta, CbteNro, Concepto, DocTipo, DocNro, CbteFecha, ImpTotal, ImpTotConc, ImpNeto, ImpOpEx, ImpIva, ImpTrib, FchServDesde, FchServHasta, FchVtoPago, MonId, MonCotiz, ESTADO_ID, NOTAS, FECHA_ALTA, FECHA_ACTUALIZACION, ERP_NOMBRE_ARCHIVO, CAE, CAEFchVto, _Error}
+            Dim columnValuesArray() As Object = New Object() {DOCUMENTO_ID, EMPRESA_ID, CbteTipo, PtoVta, CbteNro, Concepto, DocTipo, DocNro, CbteFecha, ImpTotal, ImpTotConc, ImpNeto, ImpOpEx, ImpIva, ImpTrib, FchServDesde, FchServHasta, FchVtoPago, MonId, MonCotiz, ESTADO_ID, NOTAS, FECHA_ALTA, FECHA_ACTUALIZACION, ERP_NOMBRE_ARCHIVO, CAE, CAEFchVto, _Error, Condiva}
             rowDOCUMENTOSRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowDOCUMENTOSRow)
             Return rowDOCUMENTOSRow
@@ -720,7 +731,8 @@ Partial Public Class DOCUMENTOSRecord
             Me.columnERP_NOMBRE_ARCHIVO = MyBase.Columns("ERP_NOMBRE_ARCHIVO")
             Me.columnCAE = MyBase.Columns("CAE")
             Me.columnCAEFchVto = MyBase.Columns("CAEFchVto")
-            Me.column_Error = MyBase.Columns("Error")
+            Me.columnError = MyBase.Columns("Error")
+            Me.columnCondiva = MyBase.Columns("Condiva")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -780,8 +792,13 @@ Partial Public Class DOCUMENTOSRecord
             MyBase.Columns.Add(Me.columnCAE)
             Me.columnCAEFchVto = New Global.System.Data.DataColumn("CAEFchVto", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCAEFchVto)
-            Me.column_Error = New Global.System.Data.DataColumn("Error", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.column_Error)
+            Me.columnError = New Global.System.Data.DataColumn("Error", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnError.ExtendedProperties.Add("Generator_ColumnPropNameInTable", "ErrorColumn")
+            Me.columnError.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "columnError")
+            Me.columnError.ExtendedProperties.Add("Generator_UserColumnName", "Error")
+            MyBase.Columns.Add(Me.columnError)
+            Me.columnCondiva = New Global.System.Data.DataColumn("Condiva", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCondiva)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnDOCUMENTO_ID}, true))
             Me.columnDOCUMENTO_ID.AllowDBNull = false
             Me.columnDOCUMENTO_ID.Unique = true
@@ -796,7 +813,7 @@ Partial Public Class DOCUMENTOSRecord
             Me.columnERP_NOMBRE_ARCHIVO.MaxLength = 500
             Me.columnCAE.MaxLength = 14
             Me.columnCAEFchVto.MaxLength = 8
-            Me.column_Error.MaxLength = 2500
+            Me.columnError.MaxLength = 2500
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1347,13 +1364,28 @@ Partial Public Class DOCUMENTOSRecord
         Public Property _Error() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableDOCUMENTOS._ErrorColumn),String)
+                    Return CType(Me(Me.tableDOCUMENTOS.ErrorColumn),String)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Error' in table 'DOCUMENTOS' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableDOCUMENTOS._ErrorColumn) = value
+                Me(Me.tableDOCUMENTOS.ErrorColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public Property Condiva() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableDOCUMENTOS.CondivaColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Condiva' in table 'DOCUMENTOS' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableDOCUMENTOS.CondivaColumn) = value
             End Set
         End Property
         
@@ -1672,13 +1704,25 @@ Partial Public Class DOCUMENTOSRecord
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Public Function Is_ErrorNull() As Boolean
-            Return Me.IsNull(Me.tableDOCUMENTOS._ErrorColumn)
+            Return Me.IsNull(Me.tableDOCUMENTOS.ErrorColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Public Sub Set_ErrorNull()
-            Me(Me.tableDOCUMENTOS._ErrorColumn) = Global.System.Convert.DBNull
+            Me(Me.tableDOCUMENTOS.ErrorColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public Function IsCondivaNull() As Boolean
+            Return Me.IsNull(Me.tableDOCUMENTOS.CondivaColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public Sub SetCondivaNull()
+            Me(Me.tableDOCUMENTOS.CondivaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

@@ -457,6 +457,8 @@ namespace eFactura.Core {
             
             private global::System.Data.DataColumn columnestadoAfip;
             
+            private global::System.Data.DataColumn columnCondiva;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DOCUMENTOSDataTable() {
@@ -788,6 +790,14 @@ namespace eFactura.Core {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CondivaColumn {
+                get {
+                    return this.columnCondiva;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -860,7 +870,8 @@ namespace eFactura.Core {
                         int rCbteNro, 
                         string rCbteFech, 
                         string anulacion, 
-                        string estadoAfip) {
+                        string estadoAfip, 
+                        string Condiva) {
                 DOCUMENTOSRow rowDOCUMENTOSRow = ((DOCUMENTOSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DOCUMENTO_ID,
@@ -899,7 +910,8 @@ namespace eFactura.Core {
                         rCbteNro,
                         rCbteFech,
                         anulacion,
-                        estadoAfip};
+                        estadoAfip,
+                        Condiva};
                 rowDOCUMENTOSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDOCUMENTOSRow);
                 return rowDOCUMENTOSRow;
@@ -966,6 +978,7 @@ namespace eFactura.Core {
                 this.columnrCbteFech = base.Columns["rCbteFech"];
                 this.columnanulacion = base.Columns["anulacion"];
                 this.columnestadoAfip = base.Columns["estadoAfip"];
+                this.columnCondiva = base.Columns["Condiva"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1045,6 +1058,8 @@ namespace eFactura.Core {
                 base.Columns.Add(this.columnanulacion);
                 this.columnestadoAfip = new global::System.Data.DataColumn("estadoAfip", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnestadoAfip);
+                this.columnCondiva = new global::System.Data.DataColumn("Condiva", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCondiva);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnDOCUMENTO_ID}, true));
                 this.columnDOCUMENTO_ID.AllowDBNull = false;
@@ -2941,6 +2956,22 @@ namespace eFactura.Core {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Condiva {
+                get {
+                    try {
+                        return ((string)(this[this.tableDOCUMENTOS.CondivaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Condiva\' in table \'DOCUMENTOS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDOCUMENTOS.CondivaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsEMPRESA_IDNull() {
                 return this.IsNull(this.tableDOCUMENTOS.EMPRESA_IDColumn);
             }
@@ -3369,6 +3400,18 @@ namespace eFactura.Core {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetestadoAfipNull() {
                 this[this.tableDOCUMENTOS.estadoAfipColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCondivaNull() {
+                return this.IsNull(this.tableDOCUMENTOS.CondivaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCondivaNull() {
+                this[this.tableDOCUMENTOS.CondivaColumn] = global::System.Convert.DBNull;
             }
         }
         

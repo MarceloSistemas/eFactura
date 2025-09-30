@@ -328,6 +328,8 @@ Partial Public Class DocumentosIfsa
         
         Private columnestadoAfip As Global.System.Data.DataColumn
         
+        Private columnCondiva As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Public Sub New()
@@ -548,6 +550,14 @@ Partial Public Class DocumentosIfsa
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public ReadOnly Property CondivaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCondiva
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -607,9 +617,10 @@ Partial Public Class DocumentosIfsa
                     ByVal rCbteNro As Integer,  _
                     ByVal rCbteFech As String,  _
                     ByVal anulacion As String,  _
-                    ByVal estadoAfip As String) As DocumentosRow
+                    ByVal estadoAfip As String,  _
+                    ByVal Condiva As String) As DocumentosRow
             Dim rowDocumentosRow As DocumentosRow = CType(Me.NewRow,DocumentosRow)
-            Dim columnValuesArray() As Object = New Object() {cbteTipo, PtoVta, CbteNro, Concepto, DocTipo, DocNro, CbteFch, ImpTotal, impNeto, MonID, MonCotiz, Estado, TipoIva, AlicuotaIva, cbteFchVto, cbu, aliascbu, rCbteTipo, rPtoVta, rCbteNro, rCbteFech, anulacion, estadoAfip}
+            Dim columnValuesArray() As Object = New Object() {cbteTipo, PtoVta, CbteNro, Concepto, DocTipo, DocNro, CbteFch, ImpTotal, impNeto, MonID, MonCotiz, Estado, TipoIva, AlicuotaIva, cbteFchVto, cbu, aliascbu, rCbteTipo, rPtoVta, rCbteNro, rCbteFech, anulacion, estadoAfip, Condiva}
             rowDocumentosRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowDocumentosRow)
             Return rowDocumentosRow
@@ -655,6 +666,7 @@ Partial Public Class DocumentosIfsa
             Me.columnrCbteFech = MyBase.Columns("rCbteFech")
             Me.columnanulacion = MyBase.Columns("anulacion")
             Me.columnestadoAfip = MyBase.Columns("estadoAfip")
+            Me.columnCondiva = MyBase.Columns("Condiva")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -710,6 +722,8 @@ Partial Public Class DocumentosIfsa
             MyBase.Columns.Add(Me.columnanulacion)
             Me.columnestadoAfip = New Global.System.Data.DataColumn("estadoAfip", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnestadoAfip)
+            Me.columnCondiva = New Global.System.Data.DataColumn("Condiva", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCondiva)
             Me.columncbteFchVto.MaxLength = 8
             Me.columncbu.MaxLength = 22
             Me.columnaliascbu.MaxLength = 22
@@ -1207,6 +1221,21 @@ Partial Public Class DocumentosIfsa
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public Property Condiva() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableDocumentos.CondivaColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Condiva' in table 'Documentos' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableDocumentos.CondivaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Public Function IscbteTipoNull() As Boolean
             Return Me.IsNull(Me.tableDocumentos.cbteTipoColumn)
         End Function
@@ -1479,6 +1508,18 @@ Partial Public Class DocumentosIfsa
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Public Sub SetestadoAfipNull()
             Me(Me.tableDocumentos.estadoAfipColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public Function IsCondivaNull() As Boolean
+            Return Me.IsNull(Me.tableDocumentos.CondivaColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
+        Public Sub SetCondivaNull()
+            Me(Me.tableDocumentos.CondivaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

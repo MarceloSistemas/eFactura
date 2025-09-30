@@ -60,16 +60,16 @@ namespace eFactura.Core
                         try
                         {
 
-    /* Documentación extraida de "Manual_Desarrollador_WSFECRED_v1.0.3-rc1.pdf"
-    * Se validará en todos los casos que la CUIT solicitante se encuentre entre sus representados. 
-    * El Token y el Sign remitidos deberán ser válidos y no estar vencidos.
-    * De no superarse algunas de las situaciones descriptas anteriormente retornará un error del tipo excepcional.
-    * Recordar que para poder consumir el WSAA es necesario obtener un certificado digital desde clave fiscal, 
-    * y asociarlo al ws “Web Service Registro de Facturas de Crédito Electrónica MiPyMEs ”.
-    * Al momento de solicitar un Ticket de Acceso por medio del WSAA tener en cuenta que debe enviar 
-    * el tag service con el valor "wsfecred".
-    * Para más información deberá redirigirse a los manuales www.afip.gob.ar/ws.
-    */
+                            /* Documentación extraida de "Manual_Desarrollador_WSFECRED_v1.0.3-rc1.pdf"
+                            * Se validará en todos los casos que la CUIT solicitante se encuentre entre sus representados. 
+                            * El Token y el Sign remitidos deberán ser válidos y no estar vencidos.
+                            * De no superarse algunas de las situaciones descriptas anteriormente retornará un error del tipo excepcional.
+                            * Recordar que para poder consumir el WSAA es necesario obtener un certificado digital desde clave fiscal, 
+                            * y asociarlo al ws “Web Service Registro de Facturas de Crédito Electrónica MiPyMEs ”.
+                            * Al momento de solicitar un Ticket de Acceso por medio del WSAA tener en cuenta que debe enviar 
+                            * el tag service con el valor "wsfecred".
+                            * Para más información deberá redirigirse a los manuales www.afip.gob.ar/ws.
+                            */
 
                             AFIP.LoginTicket loginTicket = new eFactura.Core.AFIP.LoginTicket();
                             // PK 15/07 
@@ -114,7 +114,7 @@ namespace eFactura.Core
             return response.FeCabResp.Resultado == "A" && response.FeDetResp.Length > 0;
         }
 
-        
+
         // PK 17/07 Clase para soportar los datos que se vayan agregando para FECRED y que aún no se conocen
         private class Info_Auxiliar
         {
@@ -177,10 +177,11 @@ namespace eFactura.Core
                 cmp.FeCabReq.CbteTipo = rowCabecera.CbteTipo;
                 cmp.FeCabReq.CantReg = 1;
 
+
                 // PK 03/09 No viene más de la tabla empresa, se obtiene de la tabla JDE
                 // --- PK 17/07 parse el campo info_auxilar formato json en la clase info_auxiliar
                 // --- Info_Auxiliar objInfo_Auxiliar = Newtonsoft.Json.JsonConvert.DeserializeObject<Info_Auxiliar>empresa.INFO_AUXILIAR);
-                
+
 
                 AFIP.WSFEv1.FECAEDetRequest[] arrItems = new eFactura.Core.AFIP.WSFEv1.FECAEDetRequest[1];
                 arrItems[0] = new AFIP.WSFEv1.FECAEDetRequest();
@@ -200,6 +201,31 @@ namespace eFactura.Core
                 arrItems[0].FchServHasta = rowCabecera.FchServHasta;
                 arrItems[0].MonId = rowCabecera.MonId;
                 arrItems[0].MonCotiz = rowCabecera.MonCotiz;
+                //
+
+                arrItems[0].monCotizField = rowCabecera.MonCotiz;
+
+                if (arrItems[0].MonId != "PES")
+                {
+                    arrItems[0].CanMisMonExt = "N";
+                }
+                else
+                {
+                    arrItems[0].MonCotizSpecified = true;
+                    //arrItems[0].CanMisMonExt = "S";
+                }
+
+                try
+                    {
+                        arrItems[0].CondicionIVAReceptorId = int.Parse(rowCabecera.Condiva);
+                    }
+                    catch
+                    {
+                        arrItems[0].CondicionIVAReceptorId = 1;
+                    }
+
+
+
 
                 // PK 18/9 -- Validaciones AFIP 
                 // 10057 - De enviarse el tag CbtesAsoc debe enviarse Tipo mayor a 0
@@ -215,7 +241,7 @@ namespace eFactura.Core
                 // PK 03/09 Nuevos campos que se obtienen de la tabla que viene de JDE para FCE
                 // PK 18/09 mandar a afip campos ditontos según tipo de factura 
                 if (rowCabecera.CbteTipo > 200)
-                { 
+                {
                     if (rowCabecera.CbteTipo == 201 || rowCabecera.CbteTipo == 206 || rowCabecera.CbteTipo == 211)
                     {
                         arrItems[0].FchVtoPago = rowCabecera.cbteFchVto;
@@ -230,7 +256,7 @@ namespace eFactura.Core
                         arrItems[0].Opcionales[2].Id = "27";
                         arrItems[0].Opcionales[2].Valor = "SCA";
                     }
-                        else
+                    else
                     {
 
                         // PK 18/09 POR AHORA se fuerza una "N" pero este valor debe venir de la tabla JDE
@@ -239,7 +265,7 @@ namespace eFactura.Core
                         arrItems[0].Opcionales[0].Id = "22";
 
                         arrItems[0].Opcionales[0].Valor = "N";
-                        try { arrItems[0].Opcionales[0].Valor = rowCabecera.anulacion;}
+                        try { arrItems[0].Opcionales[0].Valor = rowCabecera.anulacion; }
                         catch { arrItems[0].Opcionales[0].Valor = "N"; }
 
                         arrItems[0].CbtesAsoc = new AFIP.WSFEv1.CbteAsoc[1];
@@ -298,6 +324,8 @@ namespace eFactura.Core
                     arrItems[0].Tributos = arrTributo;
                 }
 
+                arrItems[0].MonCotiz = rowCabecera.MonCotiz;
+
                 cmp.FeDetReq = arrItems;
 
                 AFIP.WSFEv1.Service objWSFEv1 = new eFactura.Core.AFIP.WSFEv1.Service();
@@ -305,7 +333,7 @@ namespace eFactura.Core
 
                 // PK 18/09 Logueo el request y el response
                 Helpers.LoggerHelper.Log("Afip", "AFIP Request CAE: " + JsonConvert.SerializeObject(cmp));
-                
+
                 AFIP.WSFEv1.FECAEResponse objResponse = objWSFEv1.FECAESolicitar(auth, cmp);
 
                 Helpers.LoggerHelper.Log("Afip", "AFIP Response CAE: " + JsonConvert.SerializeObject(objResponse));
@@ -411,7 +439,7 @@ namespace eFactura.Core
 
         // PK 17/09 Llamado a AFIP para consultar comprobantes FECRED
         public AFIP.FECRED.ConsultarCmpReturnType ConsultarComprobantes
-            (AFIP.FECRED.RolSimpleType rolCUITRepresentada, long CUITContraparte, bool CUITContraparteSpecified,short codTipoCmp,bool codTipoCmpSpecified,AFIP.FECRED.EstadoCmpSimpleType estadoCmp,bool estadoCmpSpecified,AFIP.FECRED.FiltroFechaType filtroFecha,long codCteCte,bool codCteCteSpecified, AFIP.FECRED.EstadoCtaCteSimpleType estadoCtaCte,bool estadoCteCteSpecified)
+            (AFIP.FECRED.RolSimpleType rolCUITRepresentada, long CUITContraparte, bool CUITContraparteSpecified, short codTipoCmp, bool codTipoCmpSpecified, AFIP.FECRED.EstadoCmpSimpleType estadoCmp, bool estadoCmpSpecified, AFIP.FECRED.FiltroFechaType filtroFecha, long codCteCte, bool codCteCteSpecified, AFIP.FECRED.EstadoCtaCteSimpleType estadoCtaCte, bool estadoCteCteSpecified)
         {
             try
             {
@@ -419,7 +447,7 @@ namespace eFactura.Core
                 AFIP.FECRED.FECredService objWSFECRED = new AFIP.FECRED.FECredService();
                 // "https://serviciosjava.afip.gob.ar/wsfecred/FECredService"
                 objWSFECRED.Url = empresa.URL_AFIP_WSFEv1_FECRED;
-                
+
                 //AFIP.FECRED.RolSimpleType rolCUITRepresentada = AFIP.FECRED.RolSimpleType.Emisor;
                 //long CUITContraparte = long.MinValue ;
                 //bool CUITContraparteSpecified = false;
@@ -432,8 +460,8 @@ namespace eFactura.Core
                 //bool codCteCteSpecified = false;
                 //AFIP.FECRED.EstadoCtaCteSimpleType estadoCtaCte = AFIP.FECRED.EstadoCtaCteSimpleType.Aceptada;
                 //bool estadoCteCteSpecified = false;
-                
-                
+
+
                 AFIP.FECRED.ConsultarCmpReturnType objResponse = objWSFECRED.consultarComprobantes(auth,
                     rolCUITRepresentada,
                     CUITContraparte,
@@ -441,7 +469,7 @@ namespace eFactura.Core
                     codTipoCmp,
                     codTipoCmpSpecified,
                     estadoCmp,
-                    estadoCmpSpecified, 
+                    estadoCmpSpecified,
                     filtroFecha,
                     codCteCte,
                     codCteCteSpecified,
@@ -492,7 +520,7 @@ namespace eFactura.Core
                 Helpers.LoggerHelper.LogException("consultarCtaCte: ", exc);
                 throw exc;
             }
-        }        
+        }
 
 
         // PK 16/07 POR MA trear los parametros opcionales de la AFIP
@@ -534,7 +562,7 @@ namespace eFactura.Core
             AFIP.WSFEv1.ConceptoTipoResponse objResponse = objWSFEv1.FEParamGetTiposConcepto(auth);
             return objResponse;
         }
-        
+
         public AFIP.WSFEv1.FEPtoVentaResponse FEParamGetPtosVenta()
         {
 
@@ -608,7 +636,7 @@ namespace eFactura.Core
                 objWSFEv1.Url = empresa.URL_AFIP_WSFEv1;
                 AFIP.WSFEv1.FECompConsultaResponse objResponse = objWSFEv1.FECompConsultar(auth, cmp);
 
-                if (objResponse.ResultGet ==null)
+                if (objResponse.ResultGet == null)
                 {
                     var errmsg = "";
                     foreach (var ee in objResponse.Errors)
@@ -702,7 +730,7 @@ namespace eFactura.Core
 
 
 
-        
+
 
 
         public static AfipConnector GetInstance(int EMPRESA_ID)
