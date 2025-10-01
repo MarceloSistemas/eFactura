@@ -207,6 +207,7 @@ namespace eFactura.Core
 
                 if (arrItems[0].MonId != "PES")
                 {
+                    arrItems[0].MonCotizSpecified = true;
                     arrItems[0].CanMisMonExt = "N";
                 }
                 else
